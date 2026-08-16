@@ -26,7 +26,6 @@ import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-sys.path.insert(0, "/Users/chaituprani/Downloads/tenant-calibration")
 
 N_PER_TIER = 50
 VARIANT_MODEL = "qwen3:8b"

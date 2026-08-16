@@ -26,7 +26,6 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-sys.path.insert(0, "/Users/chaituprani/Downloads/tenant-calibration")
 
 from guardlens.monitor import GuardLensMonitor
 from guardlens.embedder import Embedder

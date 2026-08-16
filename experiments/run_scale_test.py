@@ -91,7 +91,6 @@ def pre_score_phase():
 
     print("\nCollecting all texts needed for 500/cycle runs...")
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-    sys.path.insert(0, "/Users/chaituprani/Downloads/tenant-calibration")
 
     from traffic.realistic_traffic import load_realistic_benign_pool
     from traffic.attack_variants import build_tiered_attack_pool
