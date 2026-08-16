@@ -1,0 +1,121 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Times New Roman', Times, serif" role="img">
+  <title>Temporal emergence of an attack cluster across monitoring cycles</title>
+  <desc>Four panels showing embedding-space scatter plots at Cycle 1 (no attack), Cycle 3 (3-item attack cluster appears), Cycle 5 (cluster grows to 9 items), and Cycle 6 (Cluster Registry flags it as new, growing, and novel, triggering an analyst alert).</desc>
+
+  <defs>
+    <marker id="tarrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#000000"/>
+    </marker>
+  </defs>
+
+  <style>
+    .panelbox { fill: #ffffff; stroke: #000000; stroke-width: 1.1; }
+    .panelbox-accent { fill: #ffffff; stroke: #000000; stroke-width: 1.8; }
+    .head { font-size: 13.5px; font-weight: bold; fill: #000000; }
+    .sub { font-size: 11px; fill: #000000; }
+    .tiny { font-size: 10px; fill: #000000; }
+    .o { fill: #ffffff; stroke: #000000; stroke-width: 1.1; }
+    .x { stroke: #000000; stroke-width: 1.6; stroke-linecap: round; }
+    .clusterring { fill: none; stroke: #000000; stroke-width: 1.1; stroke-dasharray: 3 2.5; }
+    .badge { fill: #f2f2f2; stroke: #000000; stroke-width: 0.9; }
+    .badgetext { font-size: 11.5px; fill: #000000; }
+    .alertpill { fill: #ffffff; stroke: #000000; stroke-width: 1.8; }
+    .alerttext { font-size: 12.5px; font-weight: bold; fill: #000000; }
+    .timeline { stroke: #000000; stroke-width: 1.2; }
+    .figcap { font-size: 10.5px; fill: #000000; }
+  </style>
+
+  <!-- ============ Panel 1: Cycle 1 ============ -->
+  <text x="102" y="58" text-anchor="middle" class="head">Cycle 1</text>
+  <text x="102" y="74" text-anchor="middle" class="sub">Normal traffic only</text>
+  <rect x="20" y="82" width="165" height="230" rx="2" class="panelbox"/>
+  <!-- benign points -->
+  <circle cx="45" cy="107" r="3" class="o"/><circle cx="95" cy="102" r="3" class="o"/><circle cx="145" cy="112" r="3" class="o"/>
+  <circle cx="55" cy="147" r="3" class="o"/><circle cx="110" cy="142" r="3" class="o"/><circle cx="160" cy="152" r="3" class="o"/>
+  <circle cx="50" cy="192" r="3" class="o"/><circle cx="90" cy="187" r="3" class="o"/><circle cx="135" cy="202" r="3" class="o"/>
+  <circle cx="45" cy="242" r="3" class="o"/><circle cx="100" cy="237" r="3" class="o"/><circle cx="155" cy="247" r="3" class="o"/>
+  <circle cx="70" cy="282" r="3" class="o"/><circle cx="130" cy="287" r="3" class="o"/>
+  <text x="102" y="300" text-anchor="middle" class="tiny" font-style="italic">no emerging cluster</text>
+
+  <line x1="185" y1="197" x2="197" y2="197" class="timeline" marker-end="url(#tarrow)"/>
+
+  <!-- ============ Panel 2: Cycle 3 ============ -->
+  <text x="282" y="58" text-anchor="middle" class="head">Cycle 3</text>
+  <text x="282" y="74" text-anchor="middle" class="sub">New attack family appears</text>
+  <rect x="200" y="82" width="165" height="230" rx="2" class="panelbox"/>
+  <circle cx="225" cy="107" r="3" class="o"/><circle cx="275" cy="102" r="3" class="o"/><circle cx="325" cy="112" r="3" class="o"/>
+  <circle cx="235" cy="147" r="3" class="o"/><circle cx="290" cy="142" r="3" class="o"/><circle cx="340" cy="152" r="3" class="o"/>
+  <circle cx="230" cy="192" r="3" class="o"/><circle cx="270" cy="187" r="3" class="o"/><circle cx="315" cy="202" r="3" class="o"/>
+  <circle cx="225" cy="242" r="3" class="o"/><circle cx="280" cy="237" r="3" class="o"/><circle cx="335" cy="247" r="3" class="o"/>
+  <circle cx="250" cy="282" r="3" class="o"/><circle cx="310" cy="287" r="3" class="o"/>
+  <!-- attack cluster: 3 items -->
+  <circle cx="323" cy="135" r="22" class="clusterring"/>
+  <path d="M316,118 L324,126 M324,118 L316,126" class="x"/>
+  <path d="M331,133 L339,141 M339,133 L331,141" class="x"/>
+  <path d="M311,143 L319,151 M319,143 L311,151" class="x"/>
+  <text x="323" y="106" text-anchor="middle" class="tiny">n = 3</text>
+
+  <line x1="365" y1="197" x2="377" y2="197" class="timeline" marker-end="url(#tarrow)"/>
+
+  <!-- ============ Panel 3: Cycle 5 ============ -->
+  <text x="462" y="58" text-anchor="middle" class="head">Cycle 5</text>
+  <text x="462" y="74" text-anchor="middle" class="sub">Attack cluster grows denser</text>
+  <rect x="380" y="82" width="165" height="230" rx="2" class="panelbox"/>
+  <circle cx="405" cy="107" r="3" class="o"/><circle cx="455" cy="102" r="3" class="o"/><circle cx="505" cy="112" r="3" class="o"/>
+  <circle cx="415" cy="147" r="3" class="o"/><circle cx="470" cy="142" r="3" class="o"/><circle cx="520" cy="152" r="3" class="o"/>
+  <circle cx="410" cy="192" r="3" class="o"/><circle cx="450" cy="187" r="3" class="o"/><circle cx="495" cy="202" r="3" class="o"/>
+  <circle cx="405" cy="242" r="3" class="o"/><circle cx="460" cy="237" r="3" class="o"/><circle cx="515" cy="247" r="3" class="o"/>
+  <circle cx="430" cy="282" r="3" class="o"/><circle cx="490" cy="287" r="3" class="o"/>
+  <!-- attack cluster: 9 items -->
+  <circle cx="505" cy="127" r="32" class="clusterring"/>
+  <path d="M496,114 L504,122 M504,114 L496,122" class="x"/>
+  <path d="M511,129 L519,137 M519,129 L511,137" class="x"/>
+  <path d="M491,139 L499,147 M499,139 L491,147" class="x"/>
+  <path d="M521,109 L529,117 M529,109 L521,117" class="x"/>
+  <path d="M506,104 L514,112 M514,104 L506,112" class="x"/>
+  <path d="M481,119 L489,127 M489,119 L481,127" class="x"/>
+  <path d="M516,144 L524,152 M524,144 L516,152" class="x"/>
+  <path d="M496,99 L504,107 M504,99 L496,107" class="x"/>
+  <path d="M486,134 L494,142 M494,134 L486,142" class="x"/>
+  <text x="505" y="88" text-anchor="middle" class="tiny">n = 9 · dense</text>
+
+  <line x1="545" y1="197" x2="557" y2="197" class="timeline" marker-end="url(#tarrow)"/>
+
+  <!-- ============ Panel 4: Cycle 6 — Registry Decision ============ -->
+  <text x="642" y="58" text-anchor="middle" class="head">Cycle 6</text>
+  <text x="642" y="74" text-anchor="middle" class="sub">Cluster Registry decision</text>
+  <rect x="560" y="82" width="165" height="230" rx="2" class="panelbox-accent"/>
+
+  <rect x="577" y="98" width="130" height="26" rx="1" class="badge"/>
+  <text x="642" y="115" text-anchor="middle" class="badgetext">&#10003; Density: high</text>
+
+  <rect x="577" y="136" width="130" height="26" rx="1" class="badge"/>
+  <text x="642" y="153" text-anchor="middle" class="badgetext">&#10003; Growth: 3 &#8594; 9</text>
+
+  <rect x="577" y="174" width="130" height="26" rx="1" class="badge"/>
+  <text x="642" y="191" text-anchor="middle" class="badgetext">&#10003; Novelty: high</text>
+
+  <line x1="642" y1="206" x2="642" y2="228" stroke="#000000" stroke-width="1.6" marker-end="url(#tarrow)"/>
+
+  <rect x="577" y="232" width="130" height="32" rx="2" class="alertpill"/>
+  <text x="642" y="253" text-anchor="middle" class="alerttext">Analyst Alert</text>
+
+  <!-- ============ Timeline ============ -->
+  <line x1="20" y1="335" x2="725" y2="335" class="timeline" marker-end="url(#tarrow)"/>
+  <text x="372" y="352" text-anchor="middle" class="sub">Monitoring cycles</text>
+
+  <!-- ============ Legend ============ -->
+  <circle cx="46" cy="378" r="3.5" class="o"/>
+  <text x="58" y="382" class="tiny">Benign / normal traffic</text>
+
+  <path d="M270,374 L278,382 M278,374 L270,382" class="x"/>
+  <text x="290" y="382" class="tiny">Attack-family request</text>
+
+  <circle cx="486" cy="378" r="7" class="clusterring"/>
+  <text x="500" y="382" class="tiny">HDBSCAN cluster boundary</text>
+
+  <!-- Figure caption (IEEE convention: caption below figure, regular weight) -->
+  <text x="372" y="412" text-anchor="middle" class="figcap">Fig. 2.  Temporal emergence of a previously unseen attack family. Unlike single-cycle</text>
+  <text x="372" y="426" text-anchor="middle" class="figcap">clustering, GuardLens accumulates evidence across monitoring cycles and prioritizes</text>
+  <text x="372" y="440" text-anchor="middle" class="figcap">clusters based on novelty and growth.</text>
+</svg>

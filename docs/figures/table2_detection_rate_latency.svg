@@ -1,0 +1,154 @@
+<svg viewBox="0 0 760 450" xmlns="http://www.w3.org/2000/svg" font-family="'Times New Roman', Times, serif" role="img">
+  <title>Table II: Detection Rate and Latency Across Three Blind-Spot Regimes</title>
+  <desc>IEEE-style table comparing GuardLens against four baselines (Random Audit, Stratified Random, MMD Drift, One-Shot Cluster) across three attack-emergence regimes, reporting detection rate, median latency in cycles, purity at detection, and coverage at detection.</desc>
+
+  <style>
+    .cap { font-size: 12px; fill: #000000; }
+    .cap-b { font-size: 12px; font-weight: bold; fill: #000000; }
+    .hdr { font-size: 10.5px; font-weight: bold; fill: #000000; }
+    .cell { font-size: 10.5px; fill: #000000; }
+    .cell-b { font-size: 10.5px; font-weight: bold; fill: #000000; }
+    .regime { font-size: 10px; font-weight: bold; fill: #000000; }
+    .regime-sub { font-size: 9px; font-style: italic; fill: #333333; }
+    .note { font-size: 9px; font-style: italic; fill: #333333; }
+    .ruleThick { stroke: #000000; stroke-width: 1.6; }
+    .ruleMed { stroke: #000000; stroke-width: 1.1; }
+    .ruleThin { stroke: #999999; stroke-width: 0.75; }
+  </style>
+
+  <!-- Caption (above table, IEEE convention) -->
+  <text x="380" y="26" text-anchor="middle" class="cap"><tspan class="cap-b">TABLE II.</tspan>  DETECTION RATE AND LATENCY ACROSS THREE BLIND-SPOT REGIMES (5 SEEDS)</text>
+
+  <!-- Top rule -->
+  <line x1="30" y1="46" x2="730" y2="46" class="ruleThick"/>
+
+  <!-- Header -->
+  <text x="36" y="76" class="hdr">Regime</text>
+  <text x="228" y="76" class="hdr">Method</text>
+  <text x="375" y="76" text-anchor="middle" class="hdr">Detection Rate</text>
+  <text x="470" y="68" text-anchor="middle" class="hdr">Median Latency</text>
+  <text x="470" y="82" text-anchor="middle" class="hdr">(cycles)</text>
+  <text x="570" y="68" text-anchor="middle" class="hdr">Purity @</text>
+  <text x="570" y="82" text-anchor="middle" class="hdr">Detection</text>
+  <text x="675" y="68" text-anchor="middle" class="hdr">Coverage @</text>
+  <text x="675" y="82" text-anchor="middle" class="hdr">Detection</text>
+
+  <!-- Header rule -->
+  <line x1="30" y1="92" x2="730" y2="92" class="ruleMed"/>
+
+  <!-- ===== R1 group (rows 1-5, bottoms 113,134,155,176,197) ===== -->
+  <text x="36" y="105" class="regime">R1: Novel Family</text>
+  <text x="36" y="117" class="regime-sub">(AdvBench, step onset +</text>
+  <text x="36" y="129" class="regime-sub">ramp, top-K=3)</text>
+
+  <text x="228" y="107" class="cell-b">GuardLens</text>
+  <text x="375" y="107" text-anchor="middle" class="cell-b">100%</text>
+  <text x="470" y="107" text-anchor="middle" class="cell-b">1.0</text>
+  <text x="570" y="107" text-anchor="middle" class="cell-b">0.89</text>
+  <text x="675" y="107" text-anchor="middle" class="cell-b">0.33</text>
+
+  <text x="228" y="128" class="cell">Random Audit</text>
+  <text x="375" y="128" text-anchor="middle" class="cell">100%</text>
+  <text x="470" y="128" text-anchor="middle" class="cell">2.0</text>
+  <text x="570" y="128" text-anchor="middle" class="cell">—</text>
+  <text x="675" y="128" text-anchor="middle" class="cell">—</text>
+
+  <text x="228" y="149" class="cell">Stratified Random</text>
+  <text x="375" y="149" text-anchor="middle" class="cell">0%</text>
+  <text x="470" y="149" text-anchor="middle" class="cell">—</text>
+  <text x="570" y="149" text-anchor="middle" class="cell">—</text>
+  <text x="675" y="149" text-anchor="middle" class="cell">—</text>
+
+  <text x="228" y="170" class="cell">MMD Drift</text>
+  <text x="375" y="170" text-anchor="middle" class="cell">100%</text>
+  <text x="470" y="170" text-anchor="middle" class="cell">1.0</text>
+  <text x="570" y="170" text-anchor="middle" class="cell">—</text>
+  <text x="675" y="170" text-anchor="middle" class="cell">—</text>
+
+  <text x="228" y="191" class="cell">One-Shot Cluster</text>
+  <text x="375" y="191" text-anchor="middle" class="cell">100%</text>
+  <text x="470" y="191" text-anchor="middle" class="cell">2.0</text>
+  <text x="570" y="191" text-anchor="middle" class="cell">0.88</text>
+  <text x="675" y="191" text-anchor="middle" class="cell">0.40</text>
+
+  <line x1="30" y1="197" x2="730" y2="197" class="ruleThin"/>
+
+  <!-- ===== R2 group (rows 6-10, bottoms 218,239,260,281,302) ===== -->
+  <text x="36" y="210" class="regime">R2: Coordinated Attack</text>
+  <text x="36" y="222" class="regime-sub">(JailbreakLLMs "Advanced"</text>
+  <text x="36" y="234" class="regime-sub">burst, top-K=3)</text>
+
+  <text x="228" y="212" class="cell-b">GuardLens</text>
+  <text x="375" y="212" text-anchor="middle" class="cell-b">100%</text>
+  <text x="470" y="212" text-anchor="middle" class="cell-b">0.0</text>
+  <text x="570" y="212" text-anchor="middle" class="cell-b">0.86</text>
+  <text x="675" y="212" text-anchor="middle" class="cell-b">0.80</text>
+
+  <text x="228" y="233" class="cell">Random Audit</text>
+  <text x="375" y="233" text-anchor="middle" class="cell">0%</text>
+  <text x="470" y="233" text-anchor="middle" class="cell">—</text>
+  <text x="570" y="233" text-anchor="middle" class="cell">—</text>
+  <text x="675" y="233" text-anchor="middle" class="cell">—</text>
+
+  <text x="228" y="254" class="cell">Stratified Random</text>
+  <text x="375" y="254" text-anchor="middle" class="cell">100%</text>
+  <text x="470" y="254" text-anchor="middle" class="cell">0.0</text>
+  <text x="570" y="254" text-anchor="middle" class="cell">—</text>
+  <text x="675" y="254" text-anchor="middle" class="cell">—</text>
+
+  <text x="228" y="275" class="cell">MMD Drift</text>
+  <text x="375" y="275" text-anchor="middle" class="cell">100%</text>
+  <text x="470" y="275" text-anchor="middle" class="cell">0.0</text>
+  <text x="570" y="275" text-anchor="middle" class="cell">—</text>
+  <text x="675" y="275" text-anchor="middle" class="cell">—</text>
+
+  <text x="228" y="296" class="cell">One-Shot Cluster</text>
+  <text x="375" y="296" text-anchor="middle" class="cell">100%</text>
+  <text x="470" y="296" text-anchor="middle" class="cell">0.0</text>
+  <text x="570" y="296" text-anchor="middle" class="cell">0.86</text>
+  <text x="675" y="296" text-anchor="middle" class="cell">0.88</text>
+
+  <line x1="30" y1="302" x2="730" y2="302" class="ruleThin"/>
+
+  <!-- ===== R3 group (rows 11-15, bottoms 323,344,365,386,407) ===== -->
+  <text x="36" y="315" class="regime">R3: Slow Drift</text>
+  <text x="36" y="327" class="regime-sub">(HarmBench cybercrime_</text>
+  <text x="36" y="339" class="regime-sub">intrusion, gradual ramp,</text>
+  <text x="36" y="351" class="regime-sub">top-K=5)</text>
+
+  <text x="228" y="317" class="cell-b">GuardLens</text>
+  <text x="375" y="317" text-anchor="middle" class="cell-b">100%</text>
+  <text x="470" y="317" text-anchor="middle" class="cell-b">2.0</text>
+  <text x="570" y="317" text-anchor="middle" class="cell-b">1.00</text>
+  <text x="675" y="317" text-anchor="middle" class="cell-b">0.51</text>
+
+  <text x="228" y="338" class="cell">Random Audit</text>
+  <text x="375" y="338" text-anchor="middle" class="cell">100%</text>
+  <text x="470" y="338" text-anchor="middle" class="cell">2.0</text>
+  <text x="570" y="338" text-anchor="middle" class="cell">—</text>
+  <text x="675" y="338" text-anchor="middle" class="cell">—</text>
+
+  <text x="228" y="359" class="cell">Stratified Random</text>
+  <text x="375" y="359" text-anchor="middle" class="cell">0%</text>
+  <text x="470" y="359" text-anchor="middle" class="cell">—</text>
+  <text x="570" y="359" text-anchor="middle" class="cell">—</text>
+  <text x="675" y="359" text-anchor="middle" class="cell">—</text>
+
+  <text x="228" y="380" class="cell">MMD Drift</text>
+  <text x="375" y="380" text-anchor="middle" class="cell">80%</text>
+  <text x="470" y="380" text-anchor="middle" class="cell">4.5</text>
+  <text x="570" y="380" text-anchor="middle" class="cell">—</text>
+  <text x="675" y="380" text-anchor="middle" class="cell">—</text>
+
+  <text x="228" y="401" class="cell">One-Shot Cluster</text>
+  <text x="375" y="401" text-anchor="middle" class="cell">100%</text>
+  <text x="470" y="401" text-anchor="middle" class="cell">5.0</text>
+  <text x="570" y="401" text-anchor="middle" class="cell">1.00</text>
+  <text x="675" y="401" text-anchor="middle" class="cell">0.64</text>
+
+  <!-- Bottom rule -->
+  <line x1="30" y1="407" x2="730" y2="407" class="ruleThick"/>
+
+  <!-- Note -->
+  <text x="30" y="424" class="note">— indicates purity/coverage not applicable (baseline does not surface a ranked cluster). GuardLens rows in bold.</text>
+</svg>
