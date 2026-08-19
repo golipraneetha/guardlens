@@ -88,15 +88,15 @@ same flags reproduces it from scratch.
 
 Reported numbers were produced on:
 
-- **Hardware:** Mac mini, Apple M4 Pro, 24 GB RAM
-- **OS:** macOS 26.5.1 (arm64)
+- **Platform:** macOS 26.5.1, arm64 (Apple Silicon)
 - **Python:** 3.14.6
+- **Classifier precision:** fp32 (not quantized) — see below
 - **Key packages:** torch 2.13.0, transformers 5.15.0, sentence-transformers 5.7.0,
   scikit-learn 1.9.0, hdbscan 0.8.44, numpy 2.5.2 (full pinned list in `requirements.txt`)
 - **Ollama:** 0.32.5, models `qwen3:8b` (attack-variant generation), `llama3.1` and
   `qwen3:1.7b` (cluster verification)
 
-**Classifier precision matters on Apple Silicon.** This machine's PyTorch build only ships the
+**Classifier precision matters on Apple Silicon.** This platform's PyTorch build only ships the
 `qnnpack` quantization backend (ARM-only; `fbgemm` is x86-only). Dynamic INT8 quantization via
 `qnnpack` was tested against the deployed DeBERTa injection classifier and found to badly
 miscalibrate it — mean |score delta| of 0.44 vs. fp32 on a 6,320-prompt sample, with 40.7% of
