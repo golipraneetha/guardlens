@@ -84,6 +84,30 @@ regenerated on every clone, since several of these runs take hours. Each directo
 is what the paper's tables are drawn from directly; the corresponding `run_*.py` script with the
 same flags reproduces it from scratch.
 
+## System configuration used for the paper's results
+
+Reported numbers were produced on:
+
+- **Hardware:** Mac mini, Apple M4 Pro, 24 GB RAM
+- **OS:** macOS 26.5.1 (arm64)
+- **Python:** 3.14.6
+- **Key packages:** torch 2.13.0, transformers 5.15.0, sentence-transformers 5.7.0,
+  scikit-learn 1.9.0, hdbscan 0.8.44, numpy 2.5.2 (full pinned list in `requirements.txt`)
+- **Ollama:** 0.32.5, models `qwen3:8b` (attack-variant generation), `llama3.1` and
+  `qwen3:1.7b` (cluster verification)
+
+**Classifier precision matters on Apple Silicon.** This machine's PyTorch build only ships the
+`qnnpack` quantization backend (ARM-only; `fbgemm` is x86-only). Dynamic INT8 quantization via
+`qnnpack` was tested against the deployed DeBERTa injection classifier and found to badly
+miscalibrate it — mean |score delta| of 0.44 vs. fp32 on a 6,320-prompt sample, with 40.7% of
+prompts flipping their approve/block decision at the classifier's default threshold
+(`experiments/quantization_diagnostic.py`, results in
+`experiments/quantization_diagnostic_results.json`). All experiments therefore run the
+classifier in fp32 (`experiments/real_classifiers.py`), which is slower (~1 item/s vs. ~3–4
+item/s quantized on CPU) but avoids this miscalibration. Anyone reproducing results on
+different hardware should confirm which quantization backend (if any) their PyTorch build
+selects by default before trusting classifier scores.
+
 ## Layout
 
 - `guardlens/` — core library: embedder, clusterer, cluster registry, emergence scoring, monitor, LLM verifier
