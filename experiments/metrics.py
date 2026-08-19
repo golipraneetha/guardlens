@@ -104,3 +104,84 @@ def recall_preservation(unfiltered_queue, filtered_queue,
         return 1.0
     surviving = {e.cluster.uid for e in filtered_queue}
     return len(attack_uids & surviving) / len(attack_uids)
+
+
+# --- R4: benign demand shift / queue competition (Section V-E) ---------
+#
+# These use ground-truth origin labels (traffic/streams.py OriginBatch),
+# not a purity threshold: a small clean attack cluster and a mixed
+# benign-trend cluster are both misclassified by purity<0.5 heuristics,
+# which is exactly the distinction queue-competition analysis needs to
+# get right.
+
+@dataclass
+class LedgerEntry:
+    cycle: int
+    rank: int              # 1-indexed position in the Top-K queue
+    cluster_uid: int
+    label: str              # "attack" | "benign_trend" | "benign_stable"
+    emergence_score: float
+
+
+def cluster_origin_label(cluster_indices: np.ndarray, window_origins: list[str]) -> str:
+    """Ground-truth label for a cluster: the plurality origin bucket among
+    its members. window_origins[i] is one of "attack", "benign_stable", or
+    "benign_trend:<name>" (bucketed here by stripping the ":<name>" suffix)
+    aligned index-for-index with the monitor's current sliding window, the
+    same convention run_experiment.py already uses for window_is_attack."""
+    if len(cluster_indices) == 0:
+        return "unknown"
+    from collections import Counter
+    buckets = Counter(window_origins[i].split(":")[0] for i in cluster_indices)
+    return buckets.most_common(1)[0][0]
+
+
+def build_cycle_ledger(cycle: int, topk_clusters, window_origins: list[str]
+                       ) -> list[LedgerEntry]:
+    """One LedgerEntry per Top-K slot for this cycle. Accumulate across
+    cycles (ledger.extend(...)) and pass the combined list to
+    benign_cluster_rate / queue_pollution / analyst_burden below."""
+    entries = []
+    for rank, entry in enumerate(topk_clusters, start=1):
+        entries.append(LedgerEntry(
+            cycle=cycle, rank=rank, cluster_uid=entry.cluster.uid,
+            label=cluster_origin_label(entry.cluster.indices, window_origins),
+            emergence_score=entry.cluster.emergence,
+        ))
+    return entries
+
+
+def benign_cluster_rate(ledger: list[LedgerEntry]) -> float:
+    """Fraction of all Top-K slots, across the whole run, occupied by a
+    benign-trend cluster rather than an attack or benign-stable one."""
+    if not ledger:
+        return 0.0
+    return sum(1 for e in ledger if e.label == "benign_trend") / len(ledger)
+
+
+def queue_pollution(ledger: list[LedgerEntry]) -> float:
+    """Fraction of cycles where at least one Top-K slot went to a
+    benign-trend cluster -- the queue-competition rate reviewers asked
+    about: how often does emergent-but-benign traffic cost a review slot
+    that could have gone to an attack cluster."""
+    by_cycle: dict[int, list[LedgerEntry]] = {}
+    for e in ledger:
+        by_cycle.setdefault(e.cycle, []).append(e)
+    if not by_cycle:
+        return 0.0
+    polluted = sum(1 for entries in by_cycle.values()
+                   if any(e.label == "benign_trend" for e in entries))
+    return polluted / len(by_cycle)
+
+
+def analyst_burden(ledger: list[LedgerEntry]) -> float:
+    """Mean number of benign-trend clusters reviewed per monitoring
+    cycle -- the false-positive workload implied by Top-K, independent of
+    whether an attack cluster was also present that cycle."""
+    by_cycle: dict[int, list[LedgerEntry]] = {}
+    for e in ledger:
+        by_cycle.setdefault(e.cycle, []).append(e)
+    if not by_cycle:
+        return 0.0
+    total_benign_trend = sum(1 for e in ledger if e.label == "benign_trend")
+    return total_benign_trend / len(by_cycle)

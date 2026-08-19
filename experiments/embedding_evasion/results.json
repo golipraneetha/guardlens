@@ -1,0 +1,1233 @@
+{
+  "config": {
+    "seeds": 5,
+    "cycles": 10,
+    "benign_per_cycle": 200,
+    "top_k": 3,
+    "window_size": 3,
+    "min_cluster_size": 5,
+    "onset_cycle": 5,
+    "n_variants": 50,
+    "max_cosine": 0.6,
+    "max_attempts_per_variant": 5,
+    "variant_model": "qwen3:8b",
+    "n_per_tier": 50
+  },
+  "standard": {
+    "results": [
+      {
+        "seed": 0,
+        "onset_cycle": 5,
+        "guardlens": {
+          "detection_cycle": 6,
+          "purity_at_detection": 0.8,
+          "coverage_at_detection": 0.15384615384615385,
+          "fragmentation_at_detection": 1
+        },
+        "random_audit": {
+          "detection_cycle": 6
+        },
+        "stratified_random": {
+          "detection_cycle": null
+        },
+        "mmd_drift": {
+          "detection_cycle": 6
+        },
+        "one_shot_cluster": {
+          "detection_cycle": 7,
+          "purity_at_detection": 1.0,
+          "coverage_at_detection": 0.5
+        },
+        "isolation_forest": {
+          "detection_cycle": 5
+        },
+        "per_cycle_log": [
+          {
+            "cycle": 1,
+            "n_approved": 125,
+            "n_attacks_approved": 0,
+            "top1_purity": null,
+            "coverage": 0.0,
+            "n_queue": 0,
+            "cycle_wall_seconds": 0.31360507011413574
+          },
+          {
+            "cycle": 2,
+            "n_approved": 142,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.22419500350952148
+          },
+          {
+            "cycle": 3,
+            "n_approved": 137,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.23068523406982422
+          },
+          {
+            "cycle": 4,
+            "n_approved": 136,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.26020383834838867
+          },
+          {
+            "cycle": 5,
+            "n_approved": 149,
+            "n_attacks_approved": 10,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.24133515357971191
+          },
+          {
+            "cycle": 6,
+            "n_approved": 156,
+            "n_attacks_approved": 16,
+            "top1_purity": 0.8,
+            "coverage": 0.15384615384615385,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.2661309242248535
+          },
+          {
+            "cycle": 7,
+            "n_approved": 155,
+            "n_attacks_approved": 22,
+            "top1_purity": 1.0,
+            "coverage": 0.16666666666666666,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.27591824531555176
+          },
+          {
+            "cycle": 8,
+            "n_approved": 167,
+            "n_attacks_approved": 28,
+            "top1_purity": 0.0,
+            "coverage": 0.5606060606060606,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.28626465797424316
+          },
+          {
+            "cycle": 9,
+            "n_approved": 164,
+            "n_attacks_approved": 24,
+            "top1_purity": 0.0,
+            "coverage": 0.6081081081081081,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.2848818302154541
+          },
+          {
+            "cycle": 10,
+            "n_approved": 189,
+            "n_attacks_approved": 40,
+            "top1_purity": 1.0,
+            "coverage": 0.06521739130434782,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.2814040184020996
+          }
+        ]
+      },
+      {
+        "seed": 1,
+        "onset_cycle": 5,
+        "guardlens": {
+          "detection_cycle": 6,
+          "purity_at_detection": 0.8333333333333334,
+          "coverage_at_detection": 0.19230769230769232,
+          "fragmentation_at_detection": 1
+        },
+        "random_audit": {
+          "detection_cycle": 7
+        },
+        "stratified_random": {
+          "detection_cycle": null
+        },
+        "mmd_drift": {
+          "detection_cycle": 4
+        },
+        "one_shot_cluster": {
+          "detection_cycle": 6,
+          "purity_at_detection": 1.0,
+          "coverage_at_detection": 0.3125
+        },
+        "isolation_forest": {
+          "detection_cycle": 5
+        },
+        "per_cycle_log": [
+          {
+            "cycle": 1,
+            "n_approved": 138,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.16081500053405762
+          },
+          {
+            "cycle": 2,
+            "n_approved": 129,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.16988587379455566
+          },
+          {
+            "cycle": 3,
+            "n_approved": 139,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.19539809226989746
+          },
+          {
+            "cycle": 4,
+            "n_approved": 140,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.1931018829345703
+          },
+          {
+            "cycle": 5,
+            "n_approved": 152,
+            "n_attacks_approved": 10,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.2043912410736084
+          },
+          {
+            "cycle": 6,
+            "n_approved": 161,
+            "n_attacks_approved": 16,
+            "top1_purity": 0.8333333333333334,
+            "coverage": 0.19230769230769232,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.21207785606384277
+          },
+          {
+            "cycle": 7,
+            "n_approved": 167,
+            "n_attacks_approved": 22,
+            "top1_purity": 0.85,
+            "coverage": 0.3541666666666667,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.21403098106384277
+          },
+          {
+            "cycle": 8,
+            "n_approved": 168,
+            "n_attacks_approved": 28,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.22995686531066895
+          },
+          {
+            "cycle": 9,
+            "n_approved": 160,
+            "n_attacks_approved": 24,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.21389412879943848
+          },
+          {
+            "cycle": 10,
+            "n_approved": 186,
+            "n_attacks_approved": 40,
+            "top1_purity": 1.0,
+            "coverage": 0.11956521739130435,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.2060689926147461
+          }
+        ]
+      },
+      {
+        "seed": 2,
+        "onset_cycle": 5,
+        "guardlens": {
+          "detection_cycle": 5,
+          "purity_at_detection": 0.6666666666666666,
+          "coverage_at_detection": 0.4,
+          "fragmentation_at_detection": 1
+        },
+        "random_audit": {
+          "detection_cycle": 8
+        },
+        "stratified_random": {
+          "detection_cycle": null
+        },
+        "mmd_drift": {
+          "detection_cycle": 8
+        },
+        "one_shot_cluster": {
+          "detection_cycle": 5,
+          "purity_at_detection": 0.8571428571428571,
+          "coverage_at_detection": 0.6
+        },
+        "isolation_forest": {
+          "detection_cycle": 7
+        },
+        "per_cycle_log": [
+          {
+            "cycle": 1,
+            "n_approved": 142,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.11916112899780273
+          },
+          {
+            "cycle": 2,
+            "n_approved": 127,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.15047383308410645
+          },
+          {
+            "cycle": 3,
+            "n_approved": 142,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.26491498947143555
+          },
+          {
+            "cycle": 4,
+            "n_approved": 145,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.21924495697021484
+          },
+          {
+            "cycle": 5,
+            "n_approved": 150,
+            "n_attacks_approved": 10,
+            "top1_purity": 0.6666666666666666,
+            "coverage": 0.4,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.23086905479431152
+          },
+          {
+            "cycle": 6,
+            "n_approved": 161,
+            "n_attacks_approved": 16,
+            "top1_purity": 1.0,
+            "coverage": 0.4230769230769231,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.18950414657592773
+          },
+          {
+            "cycle": 7,
+            "n_approved": 157,
+            "n_attacks_approved": 22,
+            "top1_purity": 1.0,
+            "coverage": 0.125,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.1777791976928711
+          },
+          {
+            "cycle": 8,
+            "n_approved": 175,
+            "n_attacks_approved": 28,
+            "top1_purity": 1.0,
+            "coverage": 0.48484848484848486,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.2857987880706787
+          },
+          {
+            "cycle": 9,
+            "n_approved": 166,
+            "n_attacks_approved": 24,
+            "top1_purity": 0.0,
+            "coverage": 0.527027027027027,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.20137310028076172
+          },
+          {
+            "cycle": 10,
+            "n_approved": 174,
+            "n_attacks_approved": 40,
+            "top1_purity": 1.0,
+            "coverage": 0.16304347826086957,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.24861979484558105
+          }
+        ]
+      },
+      {
+        "seed": 3,
+        "onset_cycle": 5,
+        "guardlens": {
+          "detection_cycle": 6,
+          "purity_at_detection": 0.8947368421052632,
+          "coverage_at_detection": 0.6538461538461539,
+          "fragmentation_at_detection": 1
+        },
+        "random_audit": {
+          "detection_cycle": 7
+        },
+        "stratified_random": {
+          "detection_cycle": null
+        },
+        "mmd_drift": {
+          "detection_cycle": 6
+        },
+        "one_shot_cluster": {
+          "detection_cycle": 6,
+          "purity_at_detection": 1.0,
+          "coverage_at_detection": 0.75
+        },
+        "isolation_forest": {
+          "detection_cycle": 10
+        },
+        "per_cycle_log": [
+          {
+            "cycle": 1,
+            "n_approved": 119,
+            "n_attacks_approved": 0,
+            "top1_purity": null,
+            "coverage": 0.0,
+            "n_queue": 0,
+            "cycle_wall_seconds": 0.14414596557617188
+          },
+          {
+            "cycle": 2,
+            "n_approved": 128,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.2088329792022705
+          },
+          {
+            "cycle": 3,
+            "n_approved": 141,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.13912296295166016
+          },
+          {
+            "cycle": 4,
+            "n_approved": 137,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.14552593231201172
+          },
+          {
+            "cycle": 5,
+            "n_approved": 147,
+            "n_attacks_approved": 10,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.18237686157226562
+          },
+          {
+            "cycle": 6,
+            "n_approved": 146,
+            "n_attacks_approved": 16,
+            "top1_purity": 0.8947368421052632,
+            "coverage": 0.6538461538461539,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.15869498252868652
+          },
+          {
+            "cycle": 7,
+            "n_approved": 162,
+            "n_attacks_approved": 22,
+            "top1_purity": 0.8888888888888888,
+            "coverage": 0.5,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.19271111488342285
+          },
+          {
+            "cycle": 8,
+            "n_approved": 171,
+            "n_attacks_approved": 28,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.1823737621307373
+          },
+          {
+            "cycle": 9,
+            "n_approved": 157,
+            "n_attacks_approved": 24,
+            "top1_purity": 0.0,
+            "coverage": 0.44594594594594594,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.16678285598754883
+          },
+          {
+            "cycle": 10,
+            "n_approved": 173,
+            "n_attacks_approved": 40,
+            "top1_purity": 1.0,
+            "coverage": 0.17391304347826086,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.21301007270812988
+          }
+        ]
+      },
+      {
+        "seed": 4,
+        "onset_cycle": 5,
+        "guardlens": {
+          "detection_cycle": 6,
+          "purity_at_detection": 1.0,
+          "coverage_at_detection": 0.19230769230769232,
+          "fragmentation_at_detection": 1
+        },
+        "random_audit": {
+          "detection_cycle": 10
+        },
+        "stratified_random": {
+          "detection_cycle": null
+        },
+        "mmd_drift": {
+          "detection_cycle": 7
+        },
+        "one_shot_cluster": {
+          "detection_cycle": 7,
+          "purity_at_detection": 1.0,
+          "coverage_at_detection": 0.45454545454545453
+        },
+        "isolation_forest": {
+          "detection_cycle": 5
+        },
+        "per_cycle_log": [
+          {
+            "cycle": 1,
+            "n_approved": 136,
+            "n_attacks_approved": 0,
+            "top1_purity": null,
+            "coverage": 0.0,
+            "n_queue": 0,
+            "cycle_wall_seconds": 0.12891793251037598
+          },
+          {
+            "cycle": 2,
+            "n_approved": 131,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.12019515037536621
+          },
+          {
+            "cycle": 3,
+            "n_approved": 122,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.16432809829711914
+          },
+          {
+            "cycle": 4,
+            "n_approved": 138,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.14481496810913086
+          },
+          {
+            "cycle": 5,
+            "n_approved": 155,
+            "n_attacks_approved": 10,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.14366531372070312
+          },
+          {
+            "cycle": 6,
+            "n_approved": 148,
+            "n_attacks_approved": 16,
+            "top1_purity": 1.0,
+            "coverage": 0.19230769230769232,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.1892850399017334
+          },
+          {
+            "cycle": 7,
+            "n_approved": 162,
+            "n_attacks_approved": 22,
+            "top1_purity": 0.0,
+            "coverage": 0.1875,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.17068886756896973
+          },
+          {
+            "cycle": 8,
+            "n_approved": 167,
+            "n_attacks_approved": 28,
+            "top1_purity": 1.0,
+            "coverage": 0.18181818181818182,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.21011090278625488
+          },
+          {
+            "cycle": 9,
+            "n_approved": 160,
+            "n_attacks_approved": 24,
+            "top1_purity": 1.0,
+            "coverage": 0.24324324324324326,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.15421819686889648
+          },
+          {
+            "cycle": 10,
+            "n_approved": 170,
+            "n_attacks_approved": 40,
+            "top1_purity": 1.0,
+            "coverage": 0.44565217391304346,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.15868496894836426
+          }
+        ]
+      }
+    ],
+    "summary": {
+      "n_seeds": 5,
+      "detection_rate": 1.0,
+      "detection_hits": "5/5",
+      "mean_latency": 0.8,
+      "mean_purity_at_detection": 0.8389473684210526,
+      "mean_coverage_at_detection": 0.31846153846153846,
+      "mean_cluster_size_at_detection": 2.8
+    }
+  },
+  "embedding_aware": {
+    "results": [
+      {
+        "seed": 0,
+        "onset_cycle": 5,
+        "guardlens": {
+          "detection_cycle": 7,
+          "purity_at_detection": 1.0,
+          "coverage_at_detection": 0.3541666666666667,
+          "fragmentation_at_detection": 1
+        },
+        "random_audit": {
+          "detection_cycle": 7
+        },
+        "stratified_random": {
+          "detection_cycle": null
+        },
+        "mmd_drift": {
+          "detection_cycle": 6
+        },
+        "one_shot_cluster": {
+          "detection_cycle": 7,
+          "purity_at_detection": 1.0,
+          "coverage_at_detection": 0.6363636363636364
+        },
+        "isolation_forest": {
+          "detection_cycle": 6
+        },
+        "per_cycle_log": [
+          {
+            "cycle": 1,
+            "n_approved": 125,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.00491642951965332
+          },
+          {
+            "cycle": 2,
+            "n_approved": 142,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.019734621047973633
+          },
+          {
+            "cycle": 3,
+            "n_approved": 137,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.043456077575683594
+          },
+          {
+            "cycle": 4,
+            "n_approved": 136,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.04586291313171387
+          },
+          {
+            "cycle": 5,
+            "n_approved": 149,
+            "n_attacks_approved": 10,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.04833579063415527
+          },
+          {
+            "cycle": 6,
+            "n_approved": 156,
+            "n_attacks_approved": 16,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.05136895179748535
+          },
+          {
+            "cycle": 7,
+            "n_approved": 155,
+            "n_attacks_approved": 22,
+            "top1_purity": 1.0,
+            "coverage": 0.3541666666666667,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.05623984336853027
+          },
+          {
+            "cycle": 8,
+            "n_approved": 141,
+            "n_attacks_approved": 2,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.05435013771057129
+          },
+          {
+            "cycle": 9,
+            "n_approved": 174,
+            "n_attacks_approved": 34,
+            "top1_purity": 0.0,
+            "coverage": 0.5,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.05812382698059082
+          },
+          {
+            "cycle": 10,
+            "n_approved": 165,
+            "n_attacks_approved": 16,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.062254905700683594
+          }
+        ]
+      },
+      {
+        "seed": 1,
+        "onset_cycle": 5,
+        "guardlens": {
+          "detection_cycle": 7,
+          "purity_at_detection": 0.95,
+          "coverage_at_detection": 0.3958333333333333,
+          "fragmentation_at_detection": 1
+        },
+        "random_audit": {
+          "detection_cycle": 9
+        },
+        "stratified_random": {
+          "detection_cycle": null
+        },
+        "mmd_drift": {
+          "detection_cycle": 4
+        },
+        "one_shot_cluster": {
+          "detection_cycle": 7,
+          "purity_at_detection": 1.0,
+          "coverage_at_detection": 0.5454545454545454
+        },
+        "isolation_forest": {
+          "detection_cycle": 5
+        },
+        "per_cycle_log": [
+          {
+            "cycle": 1,
+            "n_approved": 138,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.005944013595581055
+          },
+          {
+            "cycle": 2,
+            "n_approved": 129,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.019747018814086914
+          },
+          {
+            "cycle": 3,
+            "n_approved": 139,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.04398488998413086
+          },
+          {
+            "cycle": 4,
+            "n_approved": 140,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.04431009292602539
+          },
+          {
+            "cycle": 5,
+            "n_approved": 152,
+            "n_attacks_approved": 10,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.04917311668395996
+          },
+          {
+            "cycle": 6,
+            "n_approved": 161,
+            "n_attacks_approved": 16,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.05432868003845215
+          },
+          {
+            "cycle": 7,
+            "n_approved": 167,
+            "n_attacks_approved": 22,
+            "top1_purity": 0.95,
+            "coverage": 0.3958333333333333,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.060411930084228516
+          },
+          {
+            "cycle": 8,
+            "n_approved": 142,
+            "n_attacks_approved": 2,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.058203935623168945
+          },
+          {
+            "cycle": 9,
+            "n_approved": 170,
+            "n_attacks_approved": 34,
+            "top1_purity": 1.0,
+            "coverage": 0.10344827586206896,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.060248613357543945
+          },
+          {
+            "cycle": 10,
+            "n_approved": 162,
+            "n_attacks_approved": 16,
+            "top1_purity": 0.0,
+            "coverage": 0.3076923076923077,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.059144020080566406
+          }
+        ]
+      },
+      {
+        "seed": 2,
+        "onset_cycle": 5,
+        "guardlens": {
+          "detection_cycle": 7,
+          "purity_at_detection": 0.9523809523809523,
+          "coverage_at_detection": 0.4166666666666667,
+          "fragmentation_at_detection": 1
+        },
+        "random_audit": {
+          "detection_cycle": 10
+        },
+        "stratified_random": {
+          "detection_cycle": null
+        },
+        "mmd_drift": {
+          "detection_cycle": 9
+        },
+        "one_shot_cluster": {
+          "detection_cycle": 6,
+          "purity_at_detection": 0.875,
+          "coverage_at_detection": 0.4375
+        },
+        "isolation_forest": {
+          "detection_cycle": 5
+        },
+        "per_cycle_log": [
+          {
+            "cycle": 1,
+            "n_approved": 142,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.006431102752685547
+          },
+          {
+            "cycle": 2,
+            "n_approved": 127,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.020048141479492188
+          },
+          {
+            "cycle": 3,
+            "n_approved": 142,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.04473280906677246
+          },
+          {
+            "cycle": 4,
+            "n_approved": 145,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.04507708549499512
+          },
+          {
+            "cycle": 5,
+            "n_approved": 150,
+            "n_attacks_approved": 10,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.05172014236450195
+          },
+          {
+            "cycle": 6,
+            "n_approved": 161,
+            "n_attacks_approved": 16,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.05527901649475098
+          },
+          {
+            "cycle": 7,
+            "n_approved": 157,
+            "n_attacks_approved": 22,
+            "top1_purity": 0.9523809523809523,
+            "coverage": 0.4166666666666667,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.0579068660736084
+          },
+          {
+            "cycle": 8,
+            "n_approved": 149,
+            "n_attacks_approved": 2,
+            "top1_purity": 0.0,
+            "coverage": 0.525,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.05785012245178223
+          },
+          {
+            "cycle": 9,
+            "n_approved": 176,
+            "n_attacks_approved": 34,
+            "top1_purity": 0.0,
+            "coverage": 0.603448275862069,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.06119704246520996
+          },
+          {
+            "cycle": 10,
+            "n_approved": 150,
+            "n_attacks_approved": 16,
+            "top1_purity": 1.0,
+            "coverage": 0.34615384615384615,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.06030106544494629
+          }
+        ]
+      },
+      {
+        "seed": 3,
+        "onset_cycle": 5,
+        "guardlens": {
+          "detection_cycle": 7,
+          "purity_at_detection": 0.8333333333333334,
+          "coverage_at_detection": 0.3125,
+          "fragmentation_at_detection": 1
+        },
+        "random_audit": {
+          "detection_cycle": 8
+        },
+        "stratified_random": {
+          "detection_cycle": null
+        },
+        "mmd_drift": {
+          "detection_cycle": 7
+        },
+        "one_shot_cluster": {
+          "detection_cycle": 7,
+          "purity_at_detection": 0.8666666666666667,
+          "coverage_at_detection": 0.5909090909090909
+        },
+        "isolation_forest": {
+          "detection_cycle": 5
+        },
+        "per_cycle_log": [
+          {
+            "cycle": 1,
+            "n_approved": 119,
+            "n_attacks_approved": 0,
+            "top1_purity": null,
+            "coverage": 0.0,
+            "n_queue": 0,
+            "cycle_wall_seconds": 0.004474163055419922
+          },
+          {
+            "cycle": 2,
+            "n_approved": 128,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.01720404624938965
+          },
+          {
+            "cycle": 3,
+            "n_approved": 141,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.04001212120056152
+          },
+          {
+            "cycle": 4,
+            "n_approved": 137,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.0452122688293457
+          },
+          {
+            "cycle": 5,
+            "n_approved": 147,
+            "n_attacks_approved": 10,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.04808998107910156
+          },
+          {
+            "cycle": 6,
+            "n_approved": 146,
+            "n_attacks_approved": 16,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.049104928970336914
+          },
+          {
+            "cycle": 7,
+            "n_approved": 162,
+            "n_attacks_approved": 22,
+            "top1_purity": 0.8333333333333334,
+            "coverage": 0.3125,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.05512499809265137
+          },
+          {
+            "cycle": 8,
+            "n_approved": 145,
+            "n_attacks_approved": 2,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.05501294136047363
+          },
+          {
+            "cycle": 9,
+            "n_approved": 167,
+            "n_attacks_approved": 34,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.059609174728393555
+          },
+          {
+            "cycle": 10,
+            "n_approved": 149,
+            "n_attacks_approved": 16,
+            "top1_purity": 0.0,
+            "coverage": 0.3076923076923077,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.056448936462402344
+          }
+        ]
+      },
+      {
+        "seed": 4,
+        "onset_cycle": 5,
+        "guardlens": {
+          "detection_cycle": 6,
+          "purity_at_detection": 1.0,
+          "coverage_at_detection": 0.23076923076923078,
+          "fragmentation_at_detection": 1
+        },
+        "random_audit": {
+          "detection_cycle": 6
+        },
+        "stratified_random": {
+          "detection_cycle": null
+        },
+        "mmd_drift": {
+          "detection_cycle": 9
+        },
+        "one_shot_cluster": {
+          "detection_cycle": 6,
+          "purity_at_detection": 1.0,
+          "coverage_at_detection": 0.3125
+        },
+        "isolation_forest": {
+          "detection_cycle": 6
+        },
+        "per_cycle_log": [
+          {
+            "cycle": 1,
+            "n_approved": 136,
+            "n_attacks_approved": 0,
+            "top1_purity": null,
+            "coverage": 0.0,
+            "n_queue": 0,
+            "cycle_wall_seconds": 0.005727052688598633
+          },
+          {
+            "cycle": 2,
+            "n_approved": 131,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.01980113983154297
+          },
+          {
+            "cycle": 3,
+            "n_approved": 122,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.04065990447998047
+          },
+          {
+            "cycle": 4,
+            "n_approved": 138,
+            "n_attacks_approved": 0,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.04139995574951172
+          },
+          {
+            "cycle": 5,
+            "n_approved": 155,
+            "n_attacks_approved": 10,
+            "top1_purity": 0.0,
+            "coverage": 0.0,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.04717087745666504
+          },
+          {
+            "cycle": 6,
+            "n_approved": 148,
+            "n_attacks_approved": 16,
+            "top1_purity": 1.0,
+            "coverage": 0.23076923076923078,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.05154109001159668
+          },
+          {
+            "cycle": 7,
+            "n_approved": 162,
+            "n_attacks_approved": 22,
+            "top1_purity": 1.0,
+            "coverage": 0.375,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.05719804763793945
+          },
+          {
+            "cycle": 8,
+            "n_approved": 141,
+            "n_attacks_approved": 2,
+            "top1_purity": 0.0,
+            "coverage": 0.375,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.05466103553771973
+          },
+          {
+            "cycle": 9,
+            "n_approved": 170,
+            "n_attacks_approved": 34,
+            "top1_purity": 1.0,
+            "coverage": 0.13793103448275862,
+            "n_queue": 2,
+            "cycle_wall_seconds": 0.05934619903564453
+          },
+          {
+            "cycle": 10,
+            "n_approved": 146,
+            "n_attacks_approved": 16,
+            "top1_purity": 0.0,
+            "coverage": 0.34615384615384615,
+            "n_queue": 3,
+            "cycle_wall_seconds": 0.05645418167114258
+          }
+        ]
+      }
+    ],
+    "summary": {
+      "n_seeds": 5,
+      "detection_rate": 1.0,
+      "detection_hits": "5/5",
+      "mean_latency": 1.8,
+      "mean_purity_at_detection": 0.9471428571428572,
+      "mean_coverage_at_detection": 0.3419871794871795,
+      "mean_cluster_size_at_detection": 2.8,
+      "dispersed_pool_shortfall": "50/50"
+    }
+  }
+}

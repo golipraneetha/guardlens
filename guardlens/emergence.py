@@ -42,22 +42,30 @@ ABLATION_MODES = ("full", "no_density", "no_growth", "no_novelty")
 
 
 def score_clusters(clusters: list[TrackedCluster], registry: ClusterRegistry,
-                   ablation: str = "full") -> list[TrackedCluster]:
+                   ablation: str = "full", growth_floor: float = 0.1,
+                   weights: tuple[float, float, float] = (1.0, 1.0, 1.0)
+                   ) -> list[TrackedCluster]:
     """Mutates and returns clusters with growth/novelty/emergence populated.
 
     ablation controls leave-one-out experiments:
-      full        density * max(growth, 0.1) * novelty   (default)
-      no_density  1       * max(growth, 0.1) * novelty
-      no_growth   density * 1                * novelty
-      no_novelty  density * max(growth, 0.1) * 1
+      full        density * max(growth, floor) * novelty   (default)
+      no_density  1       * max(growth, floor) * novelty
+      no_growth   density * 1                  * novelty
+      no_novelty  density * max(growth, floor) * 1
+
+    growth_floor and weights (alpha, beta, gamma exponents on density,
+    growth, novelty respectively) generalize the fixed-form default
+    (floor=0.1, weights=(1,1,1)) for the joint hyperparameter sweep
+    (Section V-H) -- E = D^alpha * max(G, floor)^beta * N^gamma.
     """
+    alpha, beta, gamma = weights
     for c in clusters:
         c.growth = _growth(c)
         hist = registry.historical_centroids(exclude_uid=c.uid)
         c.novelty = _novelty(c, hist)
 
-        d = 1.0 if ablation == "no_density" else c.density
-        g = 1.0 if ablation == "no_growth" else max(c.growth, 0.1)
-        n = 1.0 if ablation == "no_novelty" else c.novelty
+        d = 1.0 if ablation == "no_density" else c.density ** alpha
+        g = 1.0 if ablation == "no_growth" else max(c.growth, growth_floor) ** beta
+        n = 1.0 if ablation == "no_novelty" else c.novelty ** gamma
         c.emergence = d * g * n
     return clusters

@@ -17,6 +17,17 @@ class CycleBatch:
     labels: list[int]   # 1 = ground-truth attack, 0 = benign
 
 
+@dataclass
+class OriginBatch(CycleBatch):
+    """A CycleBatch with a finer-grained ground-truth origin per item,
+    for regimes (R4, benign_demand_shift) where 'benign' isn't one
+    category. labels stays a plain 0/1 attack indicator so every existing
+    baseline and metric (cluster_purity, coverage, ...) keeps working
+    unmodified on OriginBatch instances; origins is additional, read only
+    by R4-specific analysis (experiments/run_benign_study.py)."""
+    origins: list[str]   # "benign_stable" | "benign_trend:<name>" | "attack"
+
+
 class BenignPool:
     """Draws without replacement from a shuffled benign pool, cycling back
     to the start (with a re-shuffle) if exhausted -- traffic simulations

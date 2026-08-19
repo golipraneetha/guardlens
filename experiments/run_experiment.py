@@ -42,6 +42,8 @@ from baselines.stratified_random import StratifiedRandomBaseline
 from baselines.mmd_drift import MMDDriftBaseline
 from baselines.one_shot_cluster import OneShotClusterBaseline
 from baselines.isolation_forest import IsolationForestBaseline
+from baselines.lof import LOFBaseline
+from baselines.one_class_svm import OneClassSVMBaseline
 from experiments.metrics import (cluster_purity, coverage, attack_cluster_fragmentation,
                                 precision_at_k, false_positive_reduction,
                                 recall_preservation)
@@ -69,15 +71,19 @@ def run_one_seed(classifier, embedder, seed: int, batches, onset_cycle: int,
                  top_k: int, window_size: int, min_cluster_size: int,
                  ref_cycles: int = 3, ablation: str = "full",
                  verifier=None, bypass_attacks: bool = False,
-                 match_threshold: float = 0.85) -> dict:
+                 match_threshold: float = 0.85, growth_floor: float = 0.1,
+                 score_weights: tuple[float, float, float] = (1.0, 1.0, 1.0)) -> dict:
     monitor = GuardLensMonitor(embedder=embedder, window_size=window_size,
                               top_k=top_k, min_cluster_size=min_cluster_size,
-                              ablation=ablation, match_threshold=match_threshold)
+                              ablation=ablation, match_threshold=match_threshold,
+                              growth_floor=growth_floor, score_weights=score_weights)
     random_audit = RandomAuditBaseline(budget=top_k, seed=seed)
     stratified = StratifiedRandomBaseline(budget=top_k, seed=seed)
     mmd = MMDDriftBaseline(alpha=0.05, n_perm=100, seed=seed)
     one_shot = OneShotClusterBaseline(top_k=top_k, min_cluster_size=min_cluster_size)
     iforest = IsolationForestBaseline(top_k=top_k, random_state=seed)
+    lof = LOFBaseline(top_k=top_k)
+    ocsvm = OneClassSVMBaseline(top_k=top_k)
 
     per_cycle_log = []
     gl_detection_cycle = None
@@ -191,9 +197,13 @@ def run_one_seed(classifier, embedder, seed: int, batches, onset_cycle: int,
                 )
                 os_coverage_at_detection = coverage(os_entries, cycle_is_attack)
 
-            # Isolation Forest: per-cycle fit on this cycle's embeddings,
-            # flags top-K most anomalous points as candidate attacks.
+            # Isolation Forest, LOF, One-Class SVM: per-cycle fit on this
+            # cycle's embeddings, flags top-K most anomalous points as
+            # candidate attacks. Same protocol, three different anomaly
+            # mechanisms (tree-isolation, local-density-ratio, margin).
             iforest.process_cycle(batch.cycle, embs, apr_labels)
+            lof.process_cycle(batch.cycle, embs, apr_labels)
+            ocsvm.process_cycle(batch.cycle, embs, apr_labels)
 
         cycle_entry = dict(
             cycle=batch.cycle, n_approved=len(apr_texts),
@@ -220,6 +230,8 @@ def run_one_seed(classifier, embedder, seed: int, batches, onset_cycle: int,
                               purity_at_detection=os_purity_at_detection,
                               coverage_at_detection=os_coverage_at_detection),
         isolation_forest=dict(detection_cycle=iforest.first_detection_cycle),
+        lof=dict(detection_cycle=lof.first_detection_cycle),
+        one_class_svm=dict(detection_cycle=ocsvm.first_detection_cycle),
         per_cycle_log=per_cycle_log,
     )
     if verifier is not None:
@@ -281,7 +293,7 @@ def summarize(results: list[dict]) -> dict:
 
     summary = {}
     for method_key in ["guardlens", "random_audit", "stratified_random", "mmd_drift",
-                       "one_shot_cluster", "isolation_forest"]:
+                       "one_shot_cluster", "isolation_forest", "lof", "one_class_svm"]:
         lat = latencies(method_key)
         summary[method_key] = dict(
             detection_rate=detection_rate(method_key),
@@ -386,6 +398,13 @@ def main():
     ap.add_argument("--match-threshold", type=float, default=0.85,
                     help="Cosine similarity threshold for matching a cluster to its "
                          "predecessor across cycles (ClusterRegistry)")
+    ap.add_argument("--growth-floor", type=float, default=0.1,
+                    help="Floor applied to the growth term before exponentiation: "
+                         "max(growth, floor). Joint sweep target (Section V-H).")
+    ap.add_argument("--score-weights", type=str, default="1,1,1",
+                    help="Comma-separated alpha,beta,gamma exponents on "
+                         "density,growth,novelty in the Emergence Score "
+                         "(E = D^alpha * max(G,floor)^beta * N^gamma).")
     ap.add_argument("--embedding-model", type=str,
                     default="sentence-transformers/all-MiniLM-L6-v2",
                     help="Sentence-transformers model name for embeddings")
@@ -428,6 +447,11 @@ def main():
 
     if args.out is None:
         args.out = str(Path(__file__).parent / f"{args.regime}_results.json")
+
+    score_weights = tuple(float(x) for x in args.score_weights.split(","))
+    if len(score_weights) != 3:
+        raise ValueError(f"--score-weights must have exactly 3 comma-separated "
+                         f"values, got {args.score_weights!r}")
 
     print("Loading datasets...")
     if args.traffic_source == "realistic":
@@ -567,7 +591,9 @@ def main():
                          args.min_cluster_size, ablation=args.ablation,
                          verifier=verifier,
                          bypass_attacks=args.attack_bypass_guardrail,
-                         match_threshold=args.match_threshold)
+                         match_threshold=args.match_threshold,
+                         growth_floor=args.growth_floor,
+                         score_weights=score_weights)
         results.append(r)
         print(f"  GuardLens detected at cycle {r['guardlens']['detection_cycle']} "
               f"(onset={r['onset_cycle']}, purity={r['guardlens']['purity_at_detection']})")
@@ -577,12 +603,17 @@ def main():
         print(f"  One-shot cluster detected at cycle {r['one_shot_cluster']['detection_cycle']} "
               f"(purity={r['one_shot_cluster']['purity_at_detection']})")
         print(f"  Isolation Forest detected at cycle {r['isolation_forest']['detection_cycle']}")
+        print(f"  LOF detected at cycle {r['lof']['detection_cycle']}")
+        print(f"  One-Class SVM detected at cycle {r['one_class_svm']['detection_cycle']}")
         if "guardlens_verified" in r:
             gv = r["guardlens_verified"]
             print(f"  GuardLens+LLM detected at cycle {gv['detection_cycle']} "
                   f"(purity={gv['purity_at_detection']})")
-            print(f"  Precision: unverified={r['precision']['unverified_mean']:.2f}, "
-                  f"verified={r['precision']['verified_mean']}")
+            uprec = r["precision"]["unverified_mean"]
+            vprec = r["precision"]["verified_mean"]
+            uprec_s = f"{uprec:.2f}" if uprec is not None else "N/A"
+            vprec_s = f"{vprec:.2f}" if vprec is not None else "N/A"
+            print(f"  Precision: unverified={uprec_s}, verified={vprec_s}")
 
     if verifier:
         verifier.save_cache()
@@ -591,7 +622,7 @@ def main():
 
     print(f"\n{'='*60}\nSUMMARY ({args.seeds} seeds, regime={args.regime})\n{'='*60}")
     method_keys = ["guardlens", "random_audit", "stratified_random", "mmd_drift",
-                   "one_shot_cluster", "isolation_forest"]
+                   "one_shot_cluster", "isolation_forest", "lof", "one_class_svm"]
     if "guardlens_verified" in summary:
         method_keys.append("guardlens_verified")
     for method in method_keys:

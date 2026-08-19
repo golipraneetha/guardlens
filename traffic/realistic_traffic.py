@@ -107,3 +107,21 @@ def load_realistic_benign_pool(
     rng.shuffle(pool)
 
     return pool
+
+
+def load_realistic_benign_sources(
+    n_per_source: int = 5000,
+    seed: int = 42,
+) -> dict[str, list[str]]:
+    """Same three sources as load_realistic_benign_pool, kept separate
+    rather than pre-mixed. Each source is internally coherent (single
+    dataset, single collection methodology) enough to stand in for a
+    distinct 'topic' in the benign-demand-shift regime (Section III-C /
+    R4) -- e.g. UltraChat's synthetic dialog appearing and growing as a
+    share of traffic looks, in embedding space, like a new benign usage
+    pattern emerging, not like attack traffic."""
+    return {
+        "alpaca": _load_alpaca(n_per_source, seed),
+        "oasst1": _load_oasst1(n_per_source, seed),
+        "ultrachat": _load_ultrachat(n_per_source, seed),
+    }

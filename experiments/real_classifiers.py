@@ -53,12 +53,13 @@ class _BatchedHFClassifier:
         self.model = (AutoModelForSequenceClassification
                       .from_pretrained(self._MODEL_NAME)
                       .to(self.device).eval())
-        if self.device == "cpu":
-            # Dynamic INT8 quantization of the Linear layers — no GPU on
-            # this host, and it's the difference between ~1 item/s and
-            # ~3-4 item/s for a base-sized transformer on CPU.
-            self.model = torch.quantization.quantize_dynamic(
-                self.model, {torch.nn.Linear}, dtype=torch.qint8)
+        # Dynamic INT8 quantization via qnnpack (the only backend available
+        # on this ARM machine; fbgemm is x86-only) was tested and found to
+        # badly miscalibrate this specific DeBERTa-v3 model: mean |score
+        # delta| of 0.44 vs fp32 on a 6,320-prompt sample, with 40.7% of
+        # prompts flipping their approve/block decision at THRESHOLD=0.5
+        # (experiments/quantization_diagnostic.py). Running fp32 throughout
+        # instead -- slower (~1 item/s vs ~3-4 item/s on CPU) but correct.
         self._cache: dict[str, float] = {}
 
     def _score_batch(self, texts: list[str]) -> list[float]:

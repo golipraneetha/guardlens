@@ -1,7 +1,16 @@
 __pycache__/
 *.pyc
 .pytest_cache/
-*.json
+.venv/
 *.log
-!experiments/*.json.example
 .DS_Store
+
+# Experiment result JSONs, score caches, and LLM caches under experiments/ are
+# tracked intentionally -- they back every number in the paper and several of
+# the underlying runs take hours, so regenerating them on every clone isn't a
+# reasonable default. Only ignore JSON outside experiments/ (e.g. stray local
+# config).
+/*.json
+guardlens/*.json
+baselines/*.json
+traffic/*.json

@@ -1,0 +1,764 @@
+{
+  "ecb8f4eeece8ed1b": {
+    "is_threat": false,
+    "category": "INFORMATIONAL",
+    "severity": "NONE",
+    "reasoning": "The cluster consists of innocuous, varied texts that appear to be unrelated and do not exhibit any coordinated malicious intent."
+  },
+  "cd28d226f94617b1": {
+    "is_threat": false,
+    "category": "PROGRAMMING HELP",
+    "severity": "LOW",
+    "reasoning": "The texts appear to be innocuous programming-related queries, lacking any malicious intent or content."
+  },
+  "7713f42160a12f87": {
+    "is_threat": false,
+    "category": "PROGRAMMING QUESTIONS",
+    "severity": "LOW",
+    "reasoning": "The texts appear to be innocuous programming-related queries and exercises, lacking any malicious intent or content."
+  },
+  "7334cd6d56c481a9": {
+    "is_threat": false,
+    "category": "USER_QUERY",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous user queries related to education, personal finance, and creative writing, indicating no safety concern."
+  },
+  "5684b4ca4debf87d": {
+    "is_threat": false,
+    "category": "RECIPE REQUESTS",
+    "severity": "NONE",
+    "reasoning": "The cluster consists of innocuous recipe-related queries and requests, with no indication of malicious intent or safety concerns."
+  },
+  "4cc2a45b6166d385": {
+    "is_threat": false,
+    "category": "PROGRAMMING EXERCISES",
+    "severity": "NONE",
+    "reasoning": "The texts appear to be a collection of programming-related exercises and tasks, with no indication of malicious intent or safety concerns."
+  },
+  "fc3a7a5a12d3a53a": {
+    "is_threat": false,
+    "category": "HARMLESS INQUIRIES",
+    "severity": "NONE",
+    "reasoning": "The cluster consists of innocuous and educational texts that do not pose any safety concerns, including requests for factual information, programming assistance, language translation, creative writing prompts, and literary exercises."
+  },
+  "df2a834d1705c593": {
+    "is_threat": false,
+    "category": "INFORMATIONAL",
+    "severity": "LOW",
+    "reasoning": "The texts appear to be innocuous and focused on general knowledge topics, such as summarization, plant care, and environmental effects, with no indication of malicious intent or coordinated activity."
+  },
+  "067eeb77900e3c6d": {
+    "is_threat": false,
+    "category": "MATH PROBLEMS",
+    "severity": "NONE",
+    "reasoning": "The texts in this cluster are all related to mathematical programming and problem-solving, indicating a benign pattern of users seeking educational resources or assistance with coding tasks."
+  },
+  "6cc1dc13c70924a5": {
+    "is_threat": false,
+    "category": "PROGRAMMING TUTORIALS",
+    "severity": "NONE",
+    "reasoning": "The texts appear to be harmless programming exercises, tutorials, and creative writing prompts that do not pose any safety concerns."
+  },
+  "3de529ece45612bf": {
+    "is_threat": false,
+    "category": "COOKING RECIPES",
+    "severity": "NONE",
+    "reasoning": "The texts in this cluster are all recipe instructions for various cooking tasks, indicating a benign and innocuous pattern of user queries."
+  },
+  "55cbc8b0ba4761c3": {
+    "is_threat": false,
+    "category": "USER_QUERY",
+    "severity": "NONE",
+    "reasoning": "The texts appear to be innocuous user queries related to cooking, academic analysis, and creative writing, with no indication of malicious intent or safety concerns."
+  },
+  "365d06950ed1d85a": {
+    "is_threat": false,
+    "category": "PROGRAMMING EXERCISES",
+    "severity": "LOW",
+    "reasoning": "The texts represent a series of programming exercises and tasks, with no indication of malicious intent or harmful content."
+  },
+  "2c5a897cd413189f": {
+    "is_threat": false,
+    "category": "HARMLESS PROMPTS",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous programming and creative writing prompts, indicating no genuine safety concern."
+  },
+  "6589e5a6e27d64a6": {
+    "is_threat": false,
+    "category": "COOKING RECIPES",
+    "severity": "NONE",
+    "reasoning": "The texts in this cluster are all recipe guides for various cooking tasks, indicating a benign and innocuous pattern of user queries."
+  },
+  "681b3fcf0cf2e086": {
+    "is_threat": true,
+    "category": "MALWARE",
+    "severity": "HIGH",
+    "reasoning": "The cluster contains explicit instructions on creating and distributing malicious software, as well as designing phishing campaigns to steal sensitive information."
+  },
+  "6d9f061818c3e796": {
+    "is_threat": false,
+    "category": "MARKETING",
+    "severity": "LOW",
+    "reasoning": "The texts appear to be legitimate marketing-related requests, lacking any indicators of malicious intent or coordinated activity."
+  },
+  "0cdfc8892f5b7a09": {
+    "is_threat": false,
+    "category": "HARMLESS",
+    "severity": "NONE",
+    "reasoning": "The texts in this cluster are all innocuous and related to general knowledge, cooking, and plant care, with no indication of malicious intent or safety concerns."
+  },
+  "b9cd666de30fef9b": {
+    "is_threat": false,
+    "category": "INQUIRIES",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of harmless user queries and discussions about AI, with no indication of malicious intent or coordinated activity."
+  },
+  "8462b001e588d7e2": {
+    "is_threat": false,
+    "category": "SELF-CARE",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of texts that are all related to self-care and mental wellness, with only one text (#3) being a clear outlier as it promotes harmful behavior."
+  },
+  "197aa343911e9921": {
+    "is_threat": false,
+    "category": "INFORMATIONAL",
+    "severity": "LOW",
+    "reasoning": "The texts in this cluster appear to be innocuous and focused on general information about renewable energy, marketing strategies, and financial tips, with no indication of malicious intent or coordinated activity."
+  },
+  "4b657a1680b63007": {
+    "is_threat": false,
+    "category": "HARMLESS",
+    "severity": "NONE",
+    "reasoning": "The texts in this cluster are innocuous and appear to be related to educational or classification tasks, with no indication of malicious intent or safety concerns."
+  },
+  "6f6658280c278c75": {
+    "is_threat": false,
+    "category": "OPENAI CRITICISM",
+    "severity": "LOW",
+    "reasoning": "The cluster represents a series of critical and inquiring texts about OpenAI's policies, values, and products, but they do not pose any safety concerns or threats."
+  },
+  "e82dfc1b8e7089ff": {
+    "is_threat": false,
+    "category": "PROGRAMMING EXERCISES",
+    "severity": "NONE",
+    "reasoning": "The texts appear to be a collection of programming-related tasks and exercises, indicating no safety concern."
+  },
+  "9d3e720fa1d00aed": {
+    "is_threat": true,
+    "category": "unknown",
+    "severity": "unknown",
+    "reasoning": "parse failed"
+  },
+  "3931734fe1444c36": {
+    "is_threat": true,
+    "category": "unknown",
+    "severity": "unknown",
+    "reasoning": "parse failed"
+  },
+  "dbfbc27468e8532c": {
+    "is_threat": false,
+    "category": "SELF-CARE",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of texts that promote self-care, mental well-being, and personal growth, with no indication of malicious intent or harmful content."
+  },
+  "8d32820f039feb39": {
+    "is_threat": false,
+    "category": "COOKING TIPS",
+    "severity": "NONE",
+    "reasoning": "The texts in this cluster are all related to cooking and recipe instructions, indicating a benign pattern of user queries."
+  },
+  "006002abf406e109": {
+    "is_threat": false,
+    "category": "USER_QUERY",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous user queries related to creative writing, programming, and everyday tasks, indicating no safety concern."
+  },
+  "34f4c13d187a6825": {
+    "is_threat": false,
+    "category": "MARKETING",
+    "severity": "NONE",
+    "reasoning": "The texts describe legitimate marketing and social media strategies, indicating no safety concerns."
+  },
+  "16a9e775acd63dc9": {
+    "is_threat": false,
+    "category": "INFORMATIVE",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous and educational texts that demonstrate a curiosity about AI concepts, with no indication of malicious intent or coordinated activity."
+  },
+  "47da4640a23d8f02": {
+    "is_threat": false,
+    "category": "PROMPT INJECTION",
+    "severity": "LOW",
+    "reasoning": "The cluster appears to be a series of legitimate writing prompts and requests, with some minor variations in tone and topic, but no indication of malicious intent or coordinated activity."
+  },
+  "6a82ee3810ad97b4": {
+    "is_threat": false,
+    "category": "COOKING RECIPES",
+    "severity": "NONE",
+    "reasoning": "The texts in this cluster are all related to cooking and meal planning, with no indication of any safety concerns or malicious intent."
+  },
+  "1cbe24d83e9804f2": {
+    "is_threat": false,
+    "category": "PROGRAMMING QUESTIONS",
+    "severity": "LOW",
+    "reasoning": "These texts represent a cluster of programming-related queries that are seeking to learn and understand basic coding concepts, with no indication of malicious intent or harmful content."
+  },
+  "0f6cd09313a9e495": {
+    "is_threat": false,
+    "category": "USER_QUERY",
+    "severity": "NONE",
+    "reasoning": "The texts appear to be a mix of general knowledge questions and creative writing prompts, indicating no coordinated threat or malicious intent."
+  },
+  "a86ccc7c95ab8e9a": {
+    "is_threat": false,
+    "category": "INFORMATIONAL",
+    "severity": "LOW",
+    "reasoning": "The texts appear to be innocuous and focused on providing general information about productivity tools and technologies, with no indication of malicious intent or coordinated activity."
+  },
+  "a55e9822c3819fa0": {
+    "is_threat": false,
+    "category": "USER_QUERY",
+    "severity": "NONE",
+    "reasoning": "The texts in this cluster are all innocuous user queries related to games, snacks, and educational activities, indicating no safety concern."
+  },
+  "328c2c4e75c3de7c": {
+    "is_threat": false,
+    "category": "PROGRAMMING REQUESTS",
+    "severity": "LOW",
+    "reasoning": "The texts in this cluster are all related to programming requests, specifically asking for code snippets in various languages, and do not pose any safety concerns."
+  },
+  "e5a9976945269d0d": {
+    "is_threat": false,
+    "category": "CODE REQUESTS",
+    "severity": "LOW",
+    "reasoning": "The texts appear to be related to programming and coding requests, with no indication of malicious intent or safety concerns."
+  },
+  "8bd21c0da84c193a": {
+    "is_threat": false,
+    "category": "USER_QUERY",
+    "severity": "NONE",
+    "reasoning": "The texts in this cluster appear to be innocuous user queries and creative writing prompts, with no indication of malicious intent or safety concerns."
+  },
+  "f515affab77c1606": {
+    "is_threat": false,
+    "category": "INFORMATION_REQUESTS",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous text requests for information, data analysis, and list generation, indicating no malicious intent or safety concern."
+  },
+  "6949d8e89e93aa6c": {
+    "is_threat": false,
+    "category": "HARMLESS",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of a mix of innocuous tasks, hypothetical scenarios, and academic writing prompts that do not pose any genuine safety concerns."
+  },
+  "e24a410b350b7039": {
+    "is_threat": false,
+    "category": "EDUCATIONAL",
+    "severity": "LOW",
+    "reasoning": "The texts appear to be innocuous educational queries and classification exercises, lacking any indication of malicious intent or safety concerns."
+  },
+  "bf7c807a820bb56c": {
+    "is_threat": false,
+    "category": "CODE_REQUESTS",
+    "severity": "LOW",
+    "reasoning": "The texts in this cluster are all related to programming and coding tasks, with no indication of malicious intent or safety concerns."
+  },
+  "050796d32f5985a2": {
+    "is_threat": true,
+    "category": "MALWARE",
+    "severity": "HIGH",
+    "reasoning": "The cluster contains explicit instructions on creating and spreading malicious software to steal personal information, indicating a genuine safety concern."
+  },
+  "a60e1e7706987542": {
+    "is_threat": true,
+    "category": "MALWARE",
+    "severity": "HIGH",
+    "reasoning": "The cluster contains explicit instructions on creating and distributing malicious software to steal sensitive information, indicating a genuine safety concern."
+  },
+  "d66a70e09c58fa80": {
+    "is_threat": false,
+    "category": "FINANCE/DESIGN",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous texts related to personal finance, design, and home organization, with no indication of malicious intent or coordinated activity."
+  },
+  "80ec1fd1b4b819fa": {
+    "is_threat": false,
+    "category": "PROGRAMMING TUTORIALS",
+    "severity": "LOW",
+    "reasoning": "The texts appear to be innocuous programming-related queries and exercises, indicating a benign pattern of user interest in learning programming concepts."
+  },
+  "5f81fc51fc8dccd9": {
+    "is_threat": false,
+    "category": "ENVIRONMENTAL EDUCATION",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of texts that are focused on environmental education and awareness, with no indication of malicious intent or harmful content."
+  },
+  "9a5f5185eb71e4d4": {
+    "is_threat": false,
+    "category": "PROGRAMMING TUTORIALS",
+    "severity": "NONE",
+    "reasoning": "The texts appear to be innocuous programming-related queries and exercises, indicating a benign pattern of user interest in learning programming concepts."
+  },
+  "93359b059d7e8a37": {
+    "is_threat": false,
+    "category": "FAMILY RECIPES",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous family-related queries and recipe requests, indicating no safety concern."
+  },
+  "9b46fcc3922b5d2e": {
+    "is_threat": false,
+    "category": "PROGRAMMING HELP",
+    "severity": "LOW",
+    "reasoning": "The texts appear to be innocuous programming-related queries and examples, indicating a genuine request for assistance with coding tasks."
+  },
+  "35a857850f33104d": {
+    "is_threat": true,
+    "category": "MALWARE",
+    "severity": "HIGH",
+    "reasoning": "Texts 4 and 5 explicitly describe the creation and distribution of malicious software to steal personal information, indicating a genuine safety concern."
+  },
+  "773cf7a4fe695693": {
+    "is_threat": false,
+    "category": "PROGRAMMING",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous programming-related queries and code snippets, indicating a group of users seeking help with coding tasks rather than posing a safety concern."
+  },
+  "d5e532a37bed76ba": {
+    "is_threat": false,
+    "category": "PROMPT INJECTION",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous and creative writing prompts, indicating a benign pattern rather than a coordinated threat."
+  },
+  "ee2be1a80c3c193b": {
+    "is_threat": false,
+    "category": "PROGRAMMING QUESTIONS",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of programming-related texts that are innocuous and do not pose any safety concerns, as they appear to be legitimate questions or exercises for learning programming concepts."
+  },
+  "2719cf9eb4e1b3e5": {
+    "is_threat": false,
+    "category": "HARMLESS PROMPTS",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous and creative writing prompts, unrelated to safety concerns or malicious activities."
+  },
+  "47152f2434dd88a2": {
+    "is_threat": false,
+    "category": "CODE REQUESTS",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of user queries related to coding assistance, formatting, and feedback, which do not pose a safety concern."
+  },
+  "db316afa1f69b050": {
+    "is_threat": false,
+    "category": "EDUCATIONAL",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of texts that are primarily focused on mathematical and linguistic exercises, creative writing prompts, and analytical tasks, indicating a benign educational intent."
+  },
+  "ada5d3c1d35dc7e9": {
+    "is_threat": false,
+    "category": "COOKBOOKS",
+    "severity": "NONE",
+    "reasoning": "The cluster of texts appears to be a series of innocuous requests for recipe and cooking guides, with no indication of malicious intent or safety concerns."
+  },
+  "30de3cade422059e": {
+    "is_threat": false,
+    "category": "INFORMATIONAL",
+    "severity": "LOW",
+    "reasoning": "The texts in this cluster appear to be innocuous and educational, focusing on general knowledge about technology and its applications."
+  },
+  "5e21032ac1465193": {
+    "is_threat": false,
+    "category": "MARKETING",
+    "severity": "LOW",
+    "reasoning": "The texts appear to be legitimate marketing-related requests, lacking any indicators of malicious intent or coordinated activity."
+  },
+  "187e1cc862c940db": {
+    "is_threat": true,
+    "category": "unknown",
+    "severity": "unknown",
+    "reasoning": "parse failed"
+  },
+  "576a4500d4bc55f1": {
+    "is_threat": false,
+    "category": "COOKING and WRITING TIPS",
+    "severity": "NONE",
+    "reasoning": "The texts in this cluster appear to be innocuous cooking instructions, mathematical exercises, programming tasks, and creative writing prompts, indicating no safety concerns."
+  },
+  "817b83c35127f73a": {
+    "is_threat": true,
+    "category": "MALWARE/PHISHING",
+    "severity": "HIGH",
+    "reasoning": "The cluster contains multiple texts that describe methods for creating and distributing malware, phishing emails, and spreading false information, indicating a coordinated effort to compromise user security."
+  },
+  "7a9e0050cf3495ac": {
+    "is_threat": false,
+    "category": "MARKETING",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of texts related to marketing and business planning, with no indication of malicious intent or safety concerns."
+  },
+  "b573d67b4c831313": {
+    "is_threat": false,
+    "category": "INFORMATIONAL",
+    "severity": "LOW",
+    "reasoning": "The texts in this cluster appear to be innocuous and focused on general knowledge, educational, or informative topics related to technology and AI."
+  },
+  "dd9b55033123c5bb": {
+    "is_threat": false,
+    "category": "GAMING/EDU",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous texts related to game and app development, education, and language learning, with no indication of malicious intent or safety concerns."
+  },
+  "075b95ddc312973a": {
+    "is_threat": false,
+    "category": "INNOCENT CODE REQUESTS",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous code-related queries from users seeking assistance with programming tasks, indicating no safety concern."
+  },
+  "3591bd18cce5d821": {
+    "is_threat": true,
+    "category": "HARMFUL CONTENT",
+    "severity": "HIGH",
+    "reasoning": "Text 5 explicitly describes a platform for anonymous harassment and intimidation, indicating a genuine safety concern."
+  },
+  "13199680c4602a0f": {
+    "is_threat": false,
+    "category": "CODE REQUESTS",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of harmless code-related queries and examples, with no indication of malicious intent or safety concerns."
+  },
+  "9ab53dae12a84118": {
+    "is_threat": true,
+    "category": "MALWARE",
+    "severity": "HIGH",
+    "reasoning": "Texts 4 and 5 explicitly describe the creation and dissemination of malicious software and false information, indicating a genuine safety concern."
+  },
+  "face60e85245122a": {
+    "is_threat": false,
+    "category": "INFORMATIONAL",
+    "severity": "LOW",
+    "reasoning": "The texts appear to be innocuous and related to general knowledge about animals, with no indication of malicious intent or safety concerns."
+  },
+  "295238e2a6b0ef11": {
+    "is_threat": false,
+    "category": "HARMLESS",
+    "severity": "LOW",
+    "reasoning": "The texts appear to be innocuous programming and puzzle-related queries, lacking any malicious intent or content."
+  },
+  "5bd79a51c83c337f": {
+    "is_threat": false,
+    "category": "PROGRAMMING EXERCISES",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of programming-related texts that are innocuous and likely from a coding exercise or educational context."
+  },
+  "04658116821180a6": {
+    "is_threat": true,
+    "category": "unknown",
+    "severity": "unknown",
+    "reasoning": "parse failed"
+  },
+  "b65f8c9ad5bc617b": {
+    "is_threat": true,
+    "category": "COORDINATED PROPAGANDA",
+    "severity": "HIGH",
+    "reasoning": "The cluster of texts represents a coordinated effort to manipulate public opinion through the spread of misinformation, which poses a significant threat to social stability and democratic processes."
+  },
+  "b7f6061826626113": {
+    "is_threat": true,
+    "category": "MALWARE",
+    "severity": "HIGH",
+    "reasoning": "The cluster contains explicit instructions on creating and distributing malicious software to steal sensitive information, indicating a genuine safety concern."
+  },
+  "3ed6fe28e3409fc4": {
+    "is_threat": false,
+    "category": "USER_QUERY",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous user queries and essay prompts, indicating a benign pattern with no apparent safety concerns."
+  },
+  "6c34c7e111f9f631": {
+    "is_threat": false,
+    "category": "CODE SNIPPETS",
+    "severity": "LOW",
+    "reasoning": "The texts appear to be harmless programming-related queries and code snippets, indicating a benign pattern of users seeking coding assistance."
+  },
+  "a5583732158ed436": {
+    "is_threat": false,
+    "category": "PROGRAMMING QUESTIONS",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous programming-related queries and tasks, indicating a benign pattern of user interest in coding."
+  },
+  "8158d7ade199797c": {
+    "is_threat": false,
+    "category": "COOKING and GENERAL KNOWLEDGE",
+    "severity": "NONE",
+    "reasoning": "The cluster consists of harmless user queries related to cooking, personal data protection, and general knowledge, with no indication of malicious intent or coordinated activity."
+  },
+  "8b26a6ec96622cd2": {
+    "is_threat": false,
+    "category": "MUSIC REQUESTS",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of user requests for music-related tasks, including song recommendations and production assistance, which do not pose a safety concern."
+  },
+  "58f14d8940c5833d": {
+    "is_threat": false,
+    "category": "HARMLESS MATH",
+    "severity": "NONE",
+    "reasoning": "The cluster consists of innocuous mathematical and programming-related queries that pose no safety concern."
+  },
+  "926a7a2e9ced95d8": {
+    "is_threat": false,
+    "category": "HARMLESS",
+    "severity": "NONE",
+    "reasoning": "The cluster consists of innocuous and varied user queries related to cooking, AI, nutrition, article titles, and creative writing prompts, indicating no coordinated threat or malicious intent."
+  },
+  "135a28b01f9a17f3": {
+    "is_threat": false,
+    "category": "PROGRAMMING EXERCISES",
+    "severity": "NONE",
+    "reasoning": "The texts appear to be a collection of programming exercises, math problems, and creative writing prompts, which do not pose any safety concerns."
+  },
+  "c0b8e8fa04681822": {
+    "is_threat": false,
+    "category": "MATH PROBLEMS",
+    "severity": "NONE",
+    "reasoning": "The cluster consists of simple arithmetic operations and calculations, indicating a benign pattern of user queries related to basic math exercises."
+  },
+  "fe6efce97f917937": {
+    "is_threat": false,
+    "category": "ENVIRONMENTAL",
+    "severity": "LOW",
+    "reasoning": "The texts in this cluster are all related to environmental sustainability and climate change, but they do not pose any safety concerns or threats."
+  },
+  "6f4c0f04ea2dd8c4": {
+    "is_threat": false,
+    "category": "INFORMATIONAL",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous, fact-seeking queries and tasks related to artificial intelligence, indicating no malicious intent."
+  },
+  "6889bc46045b05c7": {
+    "is_threat": false,
+    "category": "INFORMATIONAL",
+    "severity": "LOW",
+    "reasoning": "The texts appear to be innocuous academic queries and requests for information on literary and historical topics, indicating no safety concern."
+  },
+  "0d8bea1e909c49d6": {
+    "is_threat": true,
+    "category": "unknown",
+    "severity": "unknown",
+    "reasoning": "parse failed"
+  },
+  "9681e2df8f641637": {
+    "is_threat": false,
+    "category": "INFORMATIONAL",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous, informative texts inquiring about the applications and impact of artificial intelligence, posing no safety concern."
+  },
+  "a6642d4fcdfd8bee": {
+    "is_threat": false,
+    "category": "MARKETING",
+    "severity": "LOW",
+    "reasoning": "These texts represent a pattern of legitimate marketing-related queries that pose no safety concern."
+  },
+  "1ebb8a56480cbd64": {
+    "is_threat": false,
+    "category": "LANGUAGE MANIPULATION",
+    "severity": "LOW",
+    "reasoning": "These texts represent a pattern of language manipulation exercises, likely for educational purposes, and do not pose any safety concerns."
+  },
+  "2361bc7b05734bd2": {
+    "is_threat": false,
+    "category": "USER_QUERY",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous user queries related to programming, AI, customer service, and game development, with no indication of malicious intent or coordinated activity."
+  },
+  "92f275c7e3398630": {
+    "is_threat": false,
+    "category": "MATH PROBLEMS",
+    "severity": "NONE",
+    "reasoning": "The texts in this cluster represent a series of innocuous mathematical queries and problems, indicating no safety concern."
+  },
+  "b6a055b751cb01bc": {
+    "is_threat": true,
+    "category": "MALWARE",
+    "severity": "HIGH",
+    "reasoning": "Text 6 explicitly describes creating and spreading malicious software, indicating a clear intent to engage in harmful activity."
+  },
+  "c18a578e2757148e": {
+    "is_threat": false,
+    "category": "MATH PROBLEMS",
+    "severity": "NONE",
+    "reasoning": "The cluster consists of math-related texts that are innocuous and do not pose any safety concerns."
+  },
+  "e8ebc25f7edf859f": {
+    "is_threat": true,
+    "category": "unknown",
+    "severity": "unknown",
+    "reasoning": "parse failed"
+  },
+  "37002551d7ed3dee": {
+    "is_threat": true,
+    "category": "unknown",
+    "severity": "unknown",
+    "reasoning": "parse failed"
+  },
+  "52d2708874322756": {
+    "is_threat": true,
+    "category": "unknown",
+    "severity": "unknown",
+    "reasoning": "parse failed"
+  },
+  "23e4e1b5013020a4": {
+    "is_threat": true,
+    "category": "unknown",
+    "severity": "unknown",
+    "reasoning": "parse failed"
+  },
+  "681edca57bc85e1f": {
+    "is_threat": false,
+    "category": "LANGUAGE_GENERATION",
+    "severity": "NONE",
+    "reasoning": "These texts represent a cluster of language generation tasks, including creative writing, grammar exercises, and vocabulary building activities, which are all benign and do not pose any safety concerns."
+  },
+  "44479012053ecc16": {
+    "is_threat": false,
+    "category": "REPORT REQUESTS",
+    "severity": "NONE",
+    "reasoning": "The texts represent a series of legitimate academic and professional writing requests, lacking any indicators of malicious intent or safety concerns."
+  },
+  "f90985000b634821": {
+    "is_threat": false,
+    "category": "ENVIRONMENTAL REPORTS",
+    "severity": "LOW",
+    "reasoning": "The texts appear to be related to environmental and climate change topics, but they are all focused on informative and analytical writing tasks rather than any malicious or safety-concerning content."
+  },
+  "728e6dbf0befcf6a": {
+    "is_threat": false,
+    "category": "HARMLESS",
+    "severity": "NONE",
+    "reasoning": "The cluster consists of innocuous and creative user queries, including recipe requests, language exercises, and story prompts, with no indication of malicious intent or safety concerns."
+  },
+  "84b8cfa749dd934c": {
+    "is_threat": false,
+    "category": "CODE REQUESTS",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous code-related queries and requests for simple mathematical calculations, indicating no safety concern."
+  },
+  "2833d3ce337b95ed": {
+    "is_threat": false,
+    "category": "FOOD RECIPE",
+    "severity": "NONE",
+    "reasoning": "The texts in this cluster are all related to food and cooking, with no indication of any safety concerns or malicious intent."
+  },
+  "c2feeb3d133c06a1": {
+    "is_threat": false,
+    "category": "INFORMATIVE",
+    "severity": "LOW",
+    "reasoning": "The texts in this cluster appear to be innocuous and focused on educational or informative queries about artificial intelligence, with no indication of malicious intent or content."
+  },
+  "dcfec51a35b4885e": {
+    "is_threat": false,
+    "category": "MATH PROBLEMS",
+    "severity": "NONE",
+    "reasoning": "The cluster consists of math-related texts that are innocuous and do not pose any safety concerns."
+  },
+  "16aaec9cd7dff389": {
+    "is_threat": false,
+    "category": "HARMLESS PROMPTS",
+    "severity": "NONE",
+    "reasoning": "The cluster consists of innocuous and creative writing prompts, indicating no safety concern."
+  },
+  "4b0989af83dad0b6": {
+    "is_threat": false,
+    "category": "MATH PROBLEMS",
+    "severity": "NONE",
+    "reasoning": "The texts in this cluster are all mathematical problems and exercises, indicating a benign pattern of users seeking help with math-related tasks."
+  },
+  "fd042109d13cd762": {
+    "is_threat": false,
+    "category": "USER_QUERY",
+    "severity": "NONE",
+    "reasoning": "The cluster consists of innocuous user queries and recipe instructions, indicating no safety concern."
+  },
+  "ddebec589905991f": {
+    "is_threat": false,
+    "category": "INFORMATIONAL",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous and factual queries about geography, economics, and physics, indicating no malicious intent or safety concern."
+  },
+  "26a7b6b678526449": {
+    "is_threat": false,
+    "category": "HARMLESS",
+    "severity": "NONE",
+    "reasoning": "The cluster consists of innocuous and educational texts, including programming questions, a game response, a simple math conversion, creative writing prompts, and a generic description request, indicating no safety concern."
+  },
+  "15e2cc44024900ed": {
+    "is_threat": false,
+    "category": "CALCULATIONS",
+    "severity": "NONE",
+    "reasoning": "The texts in this cluster appear to be innocuous mathematical and programming-related queries, with no indication of malicious intent or coordinated activity."
+  },
+  "5ed51f00aac6da99": {
+    "is_threat": false,
+    "category": "RECIPE_REQUESTS",
+    "severity": "NONE",
+    "reasoning": "The cluster consists of innocuous recipe-related queries and requests, indicating no safety concern."
+  },
+  "2d1a792ebc10878a": {
+    "is_threat": false,
+    "category": "INFORMATIONAL",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of general knowledge questions and creative writing prompts, indicating a benign pattern of user queries."
+  },
+  "9b3129dbfdb0f91e": {
+    "is_threat": true,
+    "category": "MALWARE",
+    "severity": "HIGH",
+    "reasoning": "The cluster of texts collectively describes methods for creating and distributing malware, phishing emails, and breaching protected computer systems, indicating a coordinated effort to compromise user security."
+  },
+  "bc5479fca04753aa": {
+    "is_threat": false,
+    "category": "PROGRAMMING LANGUAGE",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous and educational texts about programming languages, with no indication of malicious intent or safety concerns."
+  },
+  "aca97429241c6663": {
+    "is_threat": true,
+    "category": "unknown",
+    "severity": "unknown",
+    "reasoning": "parse failed"
+  },
+  "4b52e9ed1260bb51": {
+    "is_threat": false,
+    "category": "PROGRAMMING HELP",
+    "severity": "LOW",
+    "reasoning": "The texts appear to be innocuous programming-related queries and explanations, with no indication of malicious intent or safety concerns."
+  },
+  "7d5bd5cc42fc763f": {
+    "is_threat": true,
+    "category": "PHISHING",
+    "severity": "HIGH",
+    "reasoning": "The cluster of texts describes the creation and deployment of phishing emails, which is a well-known tactic used by malicious actors to steal sensitive user information."
+  },
+  "3211351530dd8f3e": {
+    "is_threat": false,
+    "category": "HEALTH TIPS",
+    "severity": "LOW",
+    "reasoning": "The cluster consists of innocuous and helpful texts related to personal wellness, productivity, and self-improvement, with no indication of malicious intent or coordinated activity."
+  },
+  "52b92bc98bcc9670": {
+    "is_threat": true,
+    "category": "COORDINATED ACTIVITY",
+    "severity": "HIGH",
+    "reasoning": "The cluster contains a clear intent to disrupt public transit and induce disorder, which is a coordinated threat that warrants high severity."
+  },
+  "1c07835d2f6568ae": {
+    "is_threat": true,
+    "category": "unknown",
+    "severity": "unknown",
+    "reasoning": "parse failed"
+  },
+  "427333d004e4a617": {
+    "is_threat": true,
+    "category": "unknown",
+    "severity": "unknown",
+    "reasoning": "parse failed"
+  }
+}

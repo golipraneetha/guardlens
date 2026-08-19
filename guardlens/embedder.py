@@ -41,3 +41,11 @@ class Embedder:
     @property
     def dim(self) -> int:
         return self._model.get_sentence_embedding_dimension()
+
+    def clear_cache(self) -> None:
+        """Drops all cached embeddings. Used by the computational-profiling
+        harness (Section V-F) to force cold-path timing per cycle -- without
+        this, a bounded benign pool cycling back on itself at large cycle
+        sizes would understate embedding cost via cache hits on repeated
+        verbatim text, which real production traffic doesn't exhibit."""
+        self._cache.clear()

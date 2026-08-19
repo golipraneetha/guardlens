@@ -14,7 +14,8 @@ concern.
 """
 from __future__ import annotations
 
-from dataclasses import dataclass
+import time
+from dataclasses import dataclass, field
 
 import numpy as np
 
@@ -26,23 +27,43 @@ from .queue import ReviewQueue, QueueEntry
 
 
 @dataclass
+class CycleTimingProfile:
+    """Wall-clock seconds for each pipeline stage in one process_cycle call.
+    All fields are 0.0 when the cycle short-circuits below min_cluster_size."""
+    embed_seconds: float = 0.0
+    cluster_seconds: float = 0.0
+    registry_seconds: float = 0.0
+    score_seconds: float = 0.0
+    queue_seconds: float = 0.0
+
+    @property
+    def total_seconds(self) -> float:
+        return (self.embed_seconds + self.cluster_seconds + self.registry_seconds
+                + self.score_seconds + self.queue_seconds)
+
+
+@dataclass
 class CycleResult:
     cycle: int
     n_items: int
     clusters: list[TrackedCluster]
     queue: list[QueueEntry]
+    timing: CycleTimingProfile = field(default_factory=CycleTimingProfile)
 
 
 class GuardLensMonitor:
     def __init__(self, embedder: Embedder | None = None, window_size: int = 3,
                  top_k: int = 5, min_cluster_size: int = 5, min_samples: int = 3,
                  match_threshold: float = 0.85, history_len: int = 7,
-                 ablation: str = "full"):
+                 ablation: str = "full", growth_floor: float = 0.1,
+                 score_weights: tuple[float, float, float] = (1.0, 1.0, 1.0)):
         self.embedder = embedder or Embedder()
         self.window_size = window_size
         self.min_cluster_size = min_cluster_size
         self.min_samples = min_samples
         self.ablation = ablation
+        self.growth_floor = growth_floor
+        self.score_weights = score_weights
         self.registry = ClusterRegistry(match_threshold=match_threshold,
                                         history_len=history_len)
         self.queue = ReviewQueue(top_k=top_k)
@@ -57,11 +78,30 @@ class GuardLensMonitor:
             return CycleResult(cycle=cycle, n_items=len(approved_texts),
                               clusters=[], queue=[])
 
+        timing = CycleTimingProfile()
+
+        t0 = time.perf_counter()
         embs = self.embedder.encode(window_flat)
+        timing.embed_seconds = time.perf_counter() - t0
+
+        t0 = time.perf_counter()
         raw_clusters = cluster_window(embs, min_cluster_size=self.min_cluster_size,
                                       min_samples=self.min_samples)
+        timing.cluster_seconds = time.perf_counter() - t0
+
+        t0 = time.perf_counter()
         tracked = self.registry.register(raw_clusters, cycle)
-        scored = score_clusters(tracked, self.registry, ablation=self.ablation)
+        timing.registry_seconds = time.perf_counter() - t0
+
+        t0 = time.perf_counter()
+        scored = score_clusters(tracked, self.registry, ablation=self.ablation,
+                                growth_floor=self.growth_floor,
+                                weights=self.score_weights)
+        timing.score_seconds = time.perf_counter() - t0
+
+        t0 = time.perf_counter()
         ranked = self.queue.rank(scored)
+        timing.queue_seconds = time.perf_counter() - t0
+
         return CycleResult(cycle=cycle, n_items=len(approved_texts),
-                          clusters=scored, queue=ranked)
+                          clusters=scored, queue=ranked, timing=timing)

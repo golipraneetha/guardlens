@@ -3,13 +3,33 @@
 Produces results for: full, no_density, no_growth, no_novelty
 across all 3 regimes. Uses --score-cache so DeBERTa scoring only
 happens once per regime (~20 min), then ablation variants are instant.
+
+Default seed count is 20, not 5 (Section V-D reviewer ask: some ablation
+deltas -- notably R2 novelty removal, 60%->80% detection at n=5 -- were
+borderline enough at n=5 that they could plausibly be sampling noise
+rather than a real effect. n=20 narrows confidence intervals enough to
+tell the two apart; raw hit counts (e.g. 16/20) are reported alongside
+percentages since detection is a binary per-seed outcome and a count is
+more informative than a rate alone at this sample size.
+
+--parallel runs the 3 non-default ablations for a regime concurrently
+*after* that regime's score cache has been warmed by the "full" run --
+parallelizing across ablations within a regime is safe (traffic and
+DeBERTa scores are identical across ablations, so once cached it's a
+read-only cache hit); parallelizing across regimes is NOT attempted here
+because they share one score-cache file, and run_experiment.py's cache
+write on a miss overwrites the file with only the current run's texts
+(fine for the existing fully-sequential regime-outer loop, but a race
+under cross-regime parallelism).
 """
 from __future__ import annotations
 
+import argparse
 import json
 import subprocess
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 ### top_k is forced to 1 here (overriding the main-experiment defaults of
@@ -47,12 +67,12 @@ REALISTIC_ARGS = [
 ]
 
 
-def run_one(regime: str, ablation: str, regime_args: list[str]) -> dict | None:
+def run_one(regime: str, ablation: str, regime_args: list[str], seeds: int) -> dict | None:
     out_path = RESULTS_DIR / f"{regime}_{ablation}.json"
     cmd = [
         sys.executable, str(Path(__file__).parent / "run_experiment.py"),
         "--regime", regime,
-        "--seeds", "5",
+        "--seeds", str(seeds),
         "--ablation", ablation,
         "--score-cache", str(CACHE_PATH),
         "--out", str(out_path),
@@ -73,24 +93,55 @@ def run_one(regime: str, ablation: str, regime_args: list[str]) -> dict | None:
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--seeds", type=int, default=20)
+    ap.add_argument("--parallel", type=int, default=1,
+                    help="Max concurrent ablation runs within a regime, after that "
+                         "regime's score cache is warmed. 1 = fully sequential.")
+    args = ap.parse_args()
+
     RESULTS_DIR.mkdir(exist_ok=True)
 
     all_results = {}
     for regime, regime_args in REGIMES.items():
-        for ablation in ABLATIONS:
-            key = f"{regime}/{ablation}"
-            data = run_one(regime, ablation, regime_args)
-            if data:
-                all_results[key] = data.get("summary", {})
+        # "full" first, sequentially -- this is what warms the shared score
+        # cache for this regime; the remaining ablations only ever read it.
+        key = f"{regime}/full"
+        data = run_one(regime, "full", regime_args, args.seeds)
+        if data:
+            all_results[key] = data.get("summary", {})
+
+        remaining = [a for a in ABLATIONS if a != "full"]
+        if args.parallel > 1:
+            with ThreadPoolExecutor(max_workers=min(args.parallel, len(remaining))) as ex:
+                futures = {ex.submit(run_one, regime, ablation, regime_args, args.seeds): ablation
+                          for ablation in remaining}
+                for fut in futures:
+                    ablation = futures[fut]
+                    data = fut.result()
+                    if data:
+                        all_results[f"{regime}/{ablation}"] = data.get("summary", {})
+        else:
+            for ablation in remaining:
+                data = run_one(regime, ablation, regime_args, args.seeds)
+                if data:
+                    all_results[f"{regime}/{ablation}"] = data.get("summary", {})
 
     print(f"\n\n{'='*70}")
-    print("ABLATION SUMMARY")
+    print(f"ABLATION SUMMARY (n={args.seeds} seeds)")
     print(f"{'='*70}")
-    print(f"{'Regime':<22} {'Ablation':<14} {'Det%':>6} {'MedLat':>7} {'Purity':>7} {'Cover':>7}")
-    print("-" * 70)
-    for key, summary in all_results.items():
+    print(f"{'Regime':<22} {'Ablation':<14} {'Det (hits/n)':>14} {'Det%':>6} "
+         f"{'MedLat':>7} {'Purity':>7} {'Cover':>7}")
+    print("-" * 84)
+    for key in (f"{r}/{a}" for r in REGIMES for a in ABLATIONS):
+        summary = all_results.get(key)
+        if not summary:
+            continue
         regime, ablation = key.split("/")
         gl = summary.get("guardlens", {})
+        hits = gl.get("detection_hits")
+        n = gl.get("n_seeds")
+        hits_s = f"{hits}/{n}" if hits is not None and n is not None else "N/A"
         det = f"{gl.get('detection_rate', 0):.0%}"
         lat = gl.get("median_latency")
         lat_s = f"{lat:.1f}" if lat is not None else "N/A"
@@ -98,9 +149,10 @@ def main():
         pur_s = f"{pur:.2f}" if pur is not None else "N/A"
         cov = gl.get("mean_coverage_at_detection")
         cov_s = f"{cov:.2f}" if cov is not None else "N/A"
-        print(f"{regime:<22} {ablation:<14} {det:>6} {lat_s:>7} {pur_s:>7} {cov_s:>7}")
+        print(f"{regime:<22} {ablation:<14} {hits_s:>14} {det:>6} "
+             f"{lat_s:>7} {pur_s:>7} {cov_s:>7}")
 
-    combined_path = RESULTS_DIR / "ablation_summary_realistic.json"
+    combined_path = RESULTS_DIR / f"ablation_summary_realistic_n{args.seeds}.json"
     combined_path.write_text(json.dumps(all_results, indent=2))
     print(f"\nWrote {combined_path}")
 

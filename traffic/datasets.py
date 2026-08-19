@@ -1,5 +1,7 @@
-"""Dataset loaders. Reuses the benchmark CSVs already vetted in the
-tenant-calibration project rather than re-downloading anything.
+"""Dataset loaders. Benchmark CSVs are vendored under benchmarks/ at the
+repo root (advbench_harmful_behaviors.csv from llm-attacks, harmbench_behaviors.csv
+from HarmBench, jailbreak_llms_{prompts,regular}.csv from verazuo/jailbreak_llms
+2023_12_25 snapshot, xstest_prompts.csv from paul-rottger/exaggerated-safety).
 
 Three distinct attack pools are kept deliberately separate so the three
 evaluation regimes don't share attack text between them:
@@ -13,7 +15,7 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 
-BENCH_DIR = Path("/Users/chaituprani/Downloads/tenant-calibration/benchmarks")
+BENCH_DIR = Path(__file__).resolve().parents[1] / "benchmarks"
 MAX_CHARS = 600  # truncate to keep classifier/embedding scoring fast
 
 

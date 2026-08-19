@@ -1,0 +1,1320 @@
+{
+  "novel_family": {
+    "regime": "novel_family",
+    "n_configs": 80,
+    "default": {
+      "match_threshold": 0.85,
+      "growth_floor": 0.1,
+      "weights": "equal",
+      "detection_rate": 1.0,
+      "median_latency": 2.0,
+      "mean_purity": 0.8738146336422199
+    },
+    "detection_rate_min": 1.0,
+    "detection_rate_max": 1.0,
+    "detection_rate_median": 1.0,
+    "n_configs_at_or_above_default": 80,
+    "n_configs_below_default": 0,
+    "all_rows": [
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.1,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.0,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.0,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.0,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.0,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.05,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.05,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.05,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.05,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.1,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.1,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.1,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.1,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.2,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.2,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.2,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.2,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.0,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.0,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.0,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.0,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.05,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.05,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.05,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.05,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.1,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.1,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.1,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.1,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.2,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.2,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.2,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.2,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.0,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.0,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.0,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.0,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.05,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.05,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.05,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.05,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.1,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.1,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.1,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.2,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.2,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.2,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 1.5,
+        "mean_purity": 0.8987362637362637
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.2,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.0,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.0,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.0,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.0,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.05,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.05,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.05,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.05,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.1,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.1,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.1,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.1,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.2,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.2,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.2,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.2,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.0,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.0,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.0,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.0,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.05,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.05,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.05,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.05,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.1,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.1,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.1,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.1,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.2,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.2,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.2,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.2,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 2.0,
+        "mean_purity": 0.8738146336422199
+      }
+    ]
+  },
+  "coordinated_attack": {
+    "regime": "coordinated_attack",
+    "n_configs": 80,
+    "default": {
+      "match_threshold": 0.85,
+      "growth_floor": 0.1,
+      "weights": "equal",
+      "detection_rate": 1.0,
+      "median_latency": 0.0,
+      "mean_purity": 0.9025641025641026
+    },
+    "detection_rate_min": 1.0,
+    "detection_rate_max": 1.0,
+    "detection_rate_median": 1.0,
+    "n_configs_at_or_above_default": 80,
+    "n_configs_below_default": 0,
+    "all_rows": [
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.1,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.0,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.0,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.0,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.0,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.05,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.05,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.05,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.05,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.1,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.1,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.1,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.1,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.2,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.2,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.2,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.75,
+        "growth_floor": 0.2,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.0,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.0,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.0,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.0,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.05,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.05,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.05,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.05,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.1,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.1,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.1,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.1,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.2,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.2,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.2,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.8,
+        "growth_floor": 0.2,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.0,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.0,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.0,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.0,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.05,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.05,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.05,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.05,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.1,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.1,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.1,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.2,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.2,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.2,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.85,
+        "growth_floor": 0.2,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.0,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.0,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.0,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.0,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.05,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.05,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.05,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.05,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.1,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.1,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.1,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.1,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.2,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.2,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.2,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.9,
+        "growth_floor": 0.2,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.0,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.0,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.0,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.0,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.05,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.05,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.05,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.05,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.1,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.1,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.1,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.1,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.2,
+        "weights": "equal",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.2,
+        "weights": "density_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.2,
+        "weights": "growth_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      },
+      {
+        "match_threshold": 0.95,
+        "growth_floor": 0.2,
+        "weights": "novelty_heavy",
+        "detection_rate": 1.0,
+        "median_latency": 0.0,
+        "mean_purity": 0.9025641025641026
+      }
+    ]
+  }
+}

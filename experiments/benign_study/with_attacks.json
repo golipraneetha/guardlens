@@ -1,0 +1,4337 @@
+{
+  "config": {
+    "seeds": 5,
+    "cycles": 15,
+    "benign_per_cycle": 200,
+    "top_k": 3
+  },
+  "results": [
+    {
+      "seed": 0,
+      "trend_windows": {
+        "coding_topic": [
+          5,
+          9,
+          13
+        ]
+      },
+      "attack_onset_cycle": 8,
+      "attack_detection_cycle": 10,
+      "benign_cluster_rate": 0.075,
+      "queue_pollution": 0.2,
+      "analyst_burden": 0.2,
+      "n_topk_slots": 40,
+      "per_cycle_log": [
+        {
+          "cycle": 1,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 2,
+          "n_queue": 3,
+          "n_clusters": 6,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 3,
+          "n_queue": 3,
+          "n_clusters": 6,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 4,
+          "n_queue": 3,
+          "n_clusters": 3,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 5,
+          "n_queue": 3,
+          "n_clusters": 3,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 6,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 7,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 8,
+          "n_queue": 3,
+          "n_clusters": 5,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 9,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 10,
+          "n_queue": 3,
+          "n_clusters": 8,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 2
+        },
+        {
+          "cycle": 11,
+          "n_queue": 3,
+          "n_clusters": 8,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 2
+        },
+        {
+          "cycle": 12,
+          "n_queue": 3,
+          "n_clusters": 12,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 1
+        },
+        {
+          "cycle": 13,
+          "n_queue": 3,
+          "n_clusters": 11,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 2
+        },
+        {
+          "cycle": 14,
+          "n_queue": 3,
+          "n_clusters": 10,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 2
+        },
+        {
+          "cycle": 15,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        }
+      ],
+      "cluster_records": [
+        {
+          "cycle": 1,
+          "uid": 1,
+          "label": "benign_stable",
+          "emergence": 0.04110187217593193,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.8220374435186386,
+          "size": 88
+        },
+        {
+          "cycle": 1,
+          "uid": 2,
+          "label": "benign_stable",
+          "emergence": 0.04110187217593193,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.8220374435186386,
+          "size": 8
+        },
+        {
+          "cycle": 2,
+          "uid": 2,
+          "label": "benign_stable",
+          "emergence": 0.003511000933404505,
+          "density": 0.05,
+          "growth": 1.3184537311185345,
+          "novelty": 0.05325937271118164,
+          "size": 11
+        },
+        {
+          "cycle": 2,
+          "uid": 3,
+          "label": "benign_stable",
+          "emergence": 0.018197906017303467,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.36395812034606934,
+          "size": 7
+        },
+        {
+          "cycle": 2,
+          "uid": 4,
+          "label": "benign_stable",
+          "emergence": 0.028601646423339844,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5720329284667969,
+          "size": 6
+        },
+        {
+          "cycle": 2,
+          "uid": 5,
+          "label": "benign_stable",
+          "emergence": 0.016433924436569214,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.3286784887313843,
+          "size": 16
+        },
+        {
+          "cycle": 2,
+          "uid": 6,
+          "label": "benign_stable",
+          "emergence": 0.016732382051934825,
+          "density": 0.05213076012620187,
+          "growth": 1.0,
+          "novelty": 0.32096946239471436,
+          "size": 15
+        },
+        {
+          "cycle": 2,
+          "uid": 7,
+          "label": "benign_stable",
+          "emergence": 0.028755450248718263,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5751090049743652,
+          "size": 5
+        },
+        {
+          "cycle": 3,
+          "uid": 2,
+          "label": "benign_stable",
+          "emergence": 0.00144290030002594,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.0288580060005188,
+          "size": 11
+        },
+        {
+          "cycle": 3,
+          "uid": 7,
+          "label": "benign_stable",
+          "emergence": 0.005903691147144751,
+          "density": 0.05,
+          "growth": 1.6931471805599454,
+          "novelty": 0.0697363018989563,
+          "size": 10
+        },
+        {
+          "cycle": 3,
+          "uid": 8,
+          "label": "benign_stable",
+          "emergence": 0.009488803148269654,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.18977606296539307,
+          "size": 17
+        },
+        {
+          "cycle": 3,
+          "uid": 5,
+          "label": "benign_stable",
+          "emergence": 0.0024418353857809804,
+          "density": 0.05,
+          "growth": 1.4054651081081644,
+          "novelty": 0.03474771976470947,
+          "size": 24
+        },
+        {
+          "cycle": 3,
+          "uid": 9,
+          "label": "benign_stable",
+          "emergence": 0.01589110493659973,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.31782209873199463,
+          "size": 6
+        },
+        {
+          "cycle": 3,
+          "uid": 6,
+          "label": "benign_stable",
+          "emergence": 0.004833667649681703,
+          "density": 0.0648239077548839,
+          "growth": 0.5945348918918356,
+          "novelty": 0.1254192590713501,
+          "size": 10
+        },
+        {
+          "cycle": 4,
+          "uid": 10,
+          "label": "benign_stable",
+          "emergence": 0.021612176299095155,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.4322435259819031,
+          "size": 7
+        },
+        {
+          "cycle": 4,
+          "uid": 5,
+          "label": "benign_stable",
+          "emergence": 0.004523817546397953,
+          "density": 0.05,
+          "growth": 1.1541506798272583,
+          "novelty": 0.0783921480178833,
+          "size": 28
+        },
+        {
+          "cycle": 4,
+          "uid": 11,
+          "label": "benign_stable",
+          "emergence": 0.01077735424041748,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.2155470848083496,
+          "size": 34
+        },
+        {
+          "cycle": 5,
+          "uid": 12,
+          "label": "benign_stable",
+          "emergence": 0.011801579594612123,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.23603159189224243,
+          "size": 7
+        },
+        {
+          "cycle": 5,
+          "uid": 13,
+          "label": "benign_stable",
+          "emergence": 0.0047854363918304445,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.09570872783660889,
+          "size": 129
+        },
+        {
+          "cycle": 5,
+          "uid": 14,
+          "label": "benign_stable",
+          "emergence": 0.023730480670928956,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.4746096134185791,
+          "size": 5
+        },
+        {
+          "cycle": 6,
+          "uid": 13,
+          "label": "benign_stable",
+          "emergence": 0.0028353689869673737,
+          "density": 0.05,
+          "growth": 1.681451140796754,
+          "novelty": 0.03372526168823242,
+          "size": 255
+        },
+        {
+          "cycle": 6,
+          "uid": 15,
+          "label": "benign_stable",
+          "emergence": 0.03961649537086487,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.7923299074172974,
+          "size": 5
+        },
+        {
+          "cycle": 7,
+          "uid": 13,
+          "label": "benign_stable",
+          "emergence": 0.0009438090758287665,
+          "density": 0.05,
+          "growth": 1.0571584138399486,
+          "novelty": 0.017855584621429443,
+          "size": 270
+        },
+        {
+          "cycle": 7,
+          "uid": 16,
+          "label": "benign_stable",
+          "emergence": 0.039188420772552496,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.7837684154510498,
+          "size": 5
+        },
+        {
+          "cycle": 8,
+          "uid": 17,
+          "label": "benign_stable",
+          "emergence": 0.015082257986068727,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.3016451597213745,
+          "size": 5
+        },
+        {
+          "cycle": 8,
+          "uid": 18,
+          "label": "benign_stable",
+          "emergence": 0.01344355344772339,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.2688710689544678,
+          "size": 8
+        },
+        {
+          "cycle": 8,
+          "uid": 19,
+          "label": "benign_stable",
+          "emergence": 0.006354323029518128,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.12708646059036255,
+          "size": 38
+        },
+        {
+          "cycle": 8,
+          "uid": 20,
+          "label": "benign_stable",
+          "emergence": 0.010768061876296997,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.21536123752593994,
+          "size": 12
+        },
+        {
+          "cycle": 8,
+          "uid": 21,
+          "label": "benign_stable",
+          "emergence": 0.0057346105575561525,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.11469221115112305,
+          "size": 7
+        },
+        {
+          "cycle": 9,
+          "uid": 19,
+          "label": "benign_stable",
+          "emergence": 0.008058194504938021,
+          "density": 0.05,
+          "growth": 2.5441973905656994,
+          "novelty": 0.06334567070007324,
+          "size": 178
+        },
+        {
+          "cycle": 9,
+          "uid": 22,
+          "label": "benign_trend",
+          "emergence": 0.02104834318161011,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.42096686363220215,
+          "size": 17
+        },
+        {
+          "cycle": 10,
+          "uid": 23,
+          "label": "benign_trend",
+          "emergence": 0.030155023932456972,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6031004786491394,
+          "size": 8
+        },
+        {
+          "cycle": 10,
+          "uid": 24,
+          "label": "benign_trend",
+          "emergence": 0.012882626056671143,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.25765252113342285,
+          "size": 15
+        },
+        {
+          "cycle": 10,
+          "uid": 25,
+          "label": "benign_stable",
+          "emergence": 0.010000551417719586,
+          "density": 0.05173584391625997,
+          "growth": 1.0,
+          "novelty": 0.1933002471923828,
+          "size": 7
+        },
+        {
+          "cycle": 10,
+          "uid": 26,
+          "label": "attack",
+          "emergence": 0.0203607976436615,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.40721595287323,
+          "size": 10
+        },
+        {
+          "cycle": 10,
+          "uid": 27,
+          "label": "benign_stable",
+          "emergence": 0.005035290122032166,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.10070580244064331,
+          "size": 11
+        },
+        {
+          "cycle": 10,
+          "uid": 28,
+          "label": "benign_trend",
+          "emergence": 0.0033914807198588107,
+          "density": 0.0723640107960564,
+          "growth": 1.0,
+          "novelty": 0.04686695337295532,
+          "size": 60
+        },
+        {
+          "cycle": 10,
+          "uid": 29,
+          "label": "attack",
+          "emergence": 0.06007171973457534,
+          "density": 0.11090989477897427,
+          "growth": 1.0,
+          "novelty": 0.5416263341903687,
+          "size": 7
+        },
+        {
+          "cycle": 10,
+          "uid": 30,
+          "label": "attack",
+          "emergence": 0.03222980940749654,
+          "density": 0.058533706009819525,
+          "growth": 1.0,
+          "novelty": 0.5506196618080139,
+          "size": 13
+        },
+        {
+          "cycle": 11,
+          "uid": 31,
+          "label": "benign_trend",
+          "emergence": 0.008136439323425294,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.16272878646850586,
+          "size": 24
+        },
+        {
+          "cycle": 11,
+          "uid": 23,
+          "label": "benign_trend",
+          "emergence": 0.0028827599474243945,
+          "density": 0.05,
+          "growth": 0.5299963707542644,
+          "novelty": 0.10878413915634155,
+          "size": 5
+        },
+        {
+          "cycle": 11,
+          "uid": 28,
+          "label": "benign_stable",
+          "emergence": 0.001714426072961489,
+          "density": 0.05685271027907345,
+          "growth": 1.1541506798272583,
+          "novelty": 0.026127934455871582,
+          "size": 70
+        },
+        {
+          "cycle": 11,
+          "uid": 27,
+          "label": "benign_stable",
+          "emergence": 0.005300814253579307,
+          "density": 0.05,
+          "growth": 1.1670540846631663,
+          "novelty": 0.09084093570709229,
+          "size": 13
+        },
+        {
+          "cycle": 11,
+          "uid": 26,
+          "label": "attack",
+          "emergence": 0.007204139889645455,
+          "density": 0.11095871317654783,
+          "growth": 0.4891743762340093,
+          "novelty": 0.13272631168365479,
+          "size": 6
+        },
+        {
+          "cycle": 11,
+          "uid": 29,
+          "label": "attack",
+          "emergence": 0.01200525471500385,
+          "density": 0.09384498460629886,
+          "growth": 1.251314428280906,
+          "novelty": 0.1022336483001709,
+          "size": 9
+        },
+        {
+          "cycle": 11,
+          "uid": 30,
+          "label": "attack",
+          "emergence": 0.004659126703372159,
+          "density": 0.05,
+          "growth": 1.2076393647782446,
+          "novelty": 0.07716089487075806,
+          "size": 16
+        },
+        {
+          "cycle": 11,
+          "uid": 32,
+          "label": "attack",
+          "emergence": 0.022331246733665468,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.4466249346733093,
+          "size": 5
+        },
+        {
+          "cycle": 12,
+          "uid": 33,
+          "label": "benign_trend",
+          "emergence": 0.006110429763793945,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.1222085952758789,
+          "size": 23
+        },
+        {
+          "cycle": 12,
+          "uid": 34,
+          "label": "benign_stable",
+          "emergence": 0.010037118196487428,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.20074236392974854,
+          "size": 5
+        },
+        {
+          "cycle": 12,
+          "uid": 35,
+          "label": "benign_stable",
+          "emergence": 0.010665223002433777,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.21330446004867554,
+          "size": 5
+        },
+        {
+          "cycle": 12,
+          "uid": 36,
+          "label": "benign_stable",
+          "emergence": 0.007948672771453858,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.15897345542907715,
+          "size": 7
+        },
+        {
+          "cycle": 12,
+          "uid": 37,
+          "label": "benign_stable",
+          "emergence": 0.01833413322378704,
+          "density": 0.0940140440075761,
+          "growth": 1.0,
+          "novelty": 0.1950148344039917,
+          "size": 8
+        },
+        {
+          "cycle": 12,
+          "uid": 38,
+          "label": "attack",
+          "emergence": 0.14299813633147856,
+          "density": 0.24129891693370223,
+          "growth": 1.0,
+          "novelty": 0.5926182270050049,
+          "size": 5
+        },
+        {
+          "cycle": 12,
+          "uid": 28,
+          "label": "benign_trend",
+          "emergence": 0.00036999169225068664,
+          "density": 0.05463727039379182,
+          "growth": 0.21724066075036752,
+          "novelty": 0.031171798706054688,
+          "size": 32
+        },
+        {
+          "cycle": 12,
+          "uid": 39,
+          "label": "benign_stable",
+          "emergence": 0.015504282712936402,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.310085654258728,
+          "size": 7
+        },
+        {
+          "cycle": 12,
+          "uid": 26,
+          "label": "attack",
+          "emergence": 0.002201481964296897,
+          "density": 0.07730373885478065,
+          "growth": 1.1541506798272583,
+          "novelty": 0.024674713611602783,
+          "size": 7
+        },
+        {
+          "cycle": 12,
+          "uid": 29,
+          "label": "attack",
+          "emergence": 0.004941462833783227,
+          "density": 0.0907959849175307,
+          "growth": 1.2876820724517808,
+          "novelty": 0.04226493835449219,
+          "size": 12
+        },
+        {
+          "cycle": 12,
+          "uid": 30,
+          "label": "attack",
+          "emergence": 0.003513395785247329,
+          "density": 0.061824709393424146,
+          "growth": 1.4462871026284194,
+          "novelty": 0.03929257392883301,
+          "size": 25
+        },
+        {
+          "cycle": 12,
+          "uid": 32,
+          "label": "attack",
+          "emergence": 0.001329132914543152,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.026582658290863037,
+          "size": 5
+        },
+        {
+          "cycle": 13,
+          "uid": 33,
+          "label": "benign_stable",
+          "emergence": 0.002863185131607271,
+          "density": 0.05,
+          "growth": 0.42945514153238695,
+          "novelty": 0.13334035873413086,
+          "size": 13
+        },
+        {
+          "cycle": 13,
+          "uid": 40,
+          "label": "benign_stable",
+          "emergence": 0.027015802264213563,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5403160452842712,
+          "size": 6
+        },
+        {
+          "cycle": 13,
+          "uid": 41,
+          "label": "benign_stable",
+          "emergence": 0.00968317985534668,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.1936635971069336,
+          "size": 5
+        },
+        {
+          "cycle": 13,
+          "uid": 42,
+          "label": "benign_stable",
+          "emergence": 0.01069038212299347,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.21380764245986938,
+          "size": 5
+        },
+        {
+          "cycle": 13,
+          "uid": 28,
+          "label": "benign_stable",
+          "emergence": 0.0032369104166269647,
+          "density": 0.05,
+          "growth": 0.9354614788624288,
+          "novelty": 0.06920456886291504,
+          "size": 30
+        },
+        {
+          "cycle": 13,
+          "uid": 37,
+          "label": "benign_stable",
+          "emergence": 0.000907978188947883,
+          "density": 0.05475410267780932,
+          "growth": 1.2231435513142097,
+          "novelty": 0.0135575532913208,
+          "size": 10
+        },
+        {
+          "cycle": 13,
+          "uid": 35,
+          "label": "benign_stable",
+          "emergence": 0.008462555608099678,
+          "density": 0.05,
+          "growth": 1.336472236621213,
+          "novelty": 0.1266402006149292,
+          "size": 7
+        },
+        {
+          "cycle": 13,
+          "uid": 29,
+          "label": "attack",
+          "emergence": 0.010757985818307341,
+          "density": 0.05,
+          "growth": 1.4595323293784401,
+          "novelty": 0.147416889667511,
+          "size": 19
+        },
+        {
+          "cycle": 13,
+          "uid": 43,
+          "label": "attack",
+          "emergence": 0.11596675229068468,
+          "density": 0.3971283405146814,
+          "growth": 1.0,
+          "novelty": 0.2920132875442505,
+          "size": 6
+        },
+        {
+          "cycle": 13,
+          "uid": 30,
+          "label": "attack",
+          "emergence": 0.0020005648650558623,
+          "density": 0.08008781655638847,
+          "growth": 0.17901944793016977,
+          "novelty": 0.13953590393066406,
+          "size": 11
+        },
+        {
+          "cycle": 13,
+          "uid": 44,
+          "label": "attack",
+          "emergence": 0.009712894828064788,
+          "density": 0.05996141345922272,
+          "growth": 1.0,
+          "novelty": 0.16198575496673584,
+          "size": 9
+        },
+        {
+          "cycle": 14,
+          "uid": 33,
+          "label": "benign_stable",
+          "emergence": 0.0035448838880780967,
+          "density": 0.05,
+          "growth": 0.7376357355325089,
+          "novelty": 0.09611475467681885,
+          "size": 10
+        },
+        {
+          "cycle": 14,
+          "uid": 40,
+          "label": "benign_stable",
+          "emergence": 0.0010863549479925986,
+          "density": 0.05,
+          "growth": 0.8176784432060454,
+          "novelty": 0.026571691036224365,
+          "size": 5
+        },
+        {
+          "cycle": 14,
+          "uid": 41,
+          "label": "benign_stable",
+          "emergence": 0.006753325446113606,
+          "density": 0.05,
+          "growth": 1.4700036292457357,
+          "novelty": 0.09188175201416016,
+          "size": 8
+        },
+        {
+          "cycle": 14,
+          "uid": 37,
+          "label": "benign_stable",
+          "emergence": 0.0031403869390487674,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.06280773878097534,
+          "size": 10
+        },
+        {
+          "cycle": 14,
+          "uid": 28,
+          "label": "benign_stable",
+          "emergence": 0.003450214063744802,
+          "density": 0.05,
+          "growth": 0.7342968342669944,
+          "novelty": 0.09397327899932861,
+          "size": 23
+        },
+        {
+          "cycle": 14,
+          "uid": 35,
+          "label": "benign_stable",
+          "emergence": 0.0033040851354599002,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.066081702709198,
+          "size": 7
+        },
+        {
+          "cycle": 14,
+          "uid": 45,
+          "label": "attack",
+          "emergence": 0.011810585717459592,
+          "density": 0.33277087059780663,
+          "growth": 1.0,
+          "novelty": 0.03549164533615112,
+          "size": 8
+        },
+        {
+          "cycle": 14,
+          "uid": 29,
+          "label": "attack",
+          "emergence": 0.00028197565947309295,
+          "density": 0.05,
+          "growth": 0.13500256251339537,
+          "novelty": 0.04177337884902954,
+          "size": 8
+        },
+        {
+          "cycle": 14,
+          "uid": 46,
+          "label": "attack",
+          "emergence": 0.005516935685292653,
+          "density": 0.13700037247859395,
+          "growth": 1.0,
+          "novelty": 0.04026949405670166,
+          "size": 12
+        },
+        {
+          "cycle": 14,
+          "uid": 30,
+          "label": "attack",
+          "emergence": 0.011498762491837528,
+          "density": 0.07879828895408886,
+          "growth": 2.47330573810952,
+          "novelty": 0.059000611305236816,
+          "size": 48
+        },
+        {
+          "cycle": 15,
+          "uid": 47,
+          "label": "benign_stable",
+          "emergence": 0.00420050323009491,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.0840100646018982,
+          "size": 460
+        },
+        {
+          "cycle": 15,
+          "uid": 33,
+          "label": "benign_stable",
+          "emergence": 0.005917892479067314,
+          "density": 0.05,
+          "growth": 1.095310179804325,
+          "novelty": 0.10805875062942505,
+          "size": 11
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "trend_windows": {
+        "coding_topic": [
+          5,
+          9,
+          13
+        ]
+      },
+      "attack_onset_cycle": 8,
+      "attack_detection_cycle": 8,
+      "benign_cluster_rate": 0.11904761904761904,
+      "queue_pollution": 0.26666666666666666,
+      "analyst_burden": 0.3333333333333333,
+      "n_topk_slots": 42,
+      "per_cycle_log": [
+        {
+          "cycle": 1,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 2,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 3,
+          "n_queue": 3,
+          "n_clusters": 3,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 4,
+          "n_queue": 3,
+          "n_clusters": 3,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 5,
+          "n_queue": 3,
+          "n_clusters": 4,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 6,
+          "n_queue": 3,
+          "n_clusters": 8,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 7,
+          "n_queue": 3,
+          "n_clusters": 6,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 8,
+          "n_queue": 3,
+          "n_clusters": 9,
+          "benign_trend_in_queue": 2,
+          "attack_in_queue": 1
+        },
+        {
+          "cycle": 9,
+          "n_queue": 3,
+          "n_clusters": 9,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 1
+        },
+        {
+          "cycle": 10,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 11,
+          "n_queue": 3,
+          "n_clusters": 5,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 2
+        },
+        {
+          "cycle": 12,
+          "n_queue": 3,
+          "n_clusters": 9,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 1
+        },
+        {
+          "cycle": 13,
+          "n_queue": 3,
+          "n_clusters": 8,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 2
+        },
+        {
+          "cycle": 14,
+          "n_queue": 3,
+          "n_clusters": 13,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 1
+        },
+        {
+          "cycle": 15,
+          "n_queue": 3,
+          "n_clusters": 12,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 2
+        }
+      ],
+      "cluster_records": [
+        {
+          "cycle": 1,
+          "uid": 1,
+          "label": "benign_stable",
+          "emergence": 0.028384375572204593,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5676875114440918,
+          "size": 38
+        },
+        {
+          "cycle": 1,
+          "uid": 2,
+          "label": "benign_stable",
+          "emergence": 0.028384375572204593,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5676875114440918,
+          "size": 5
+        },
+        {
+          "cycle": 2,
+          "uid": 1,
+          "label": "benign_stable",
+          "emergence": 0.006585467763828449,
+          "density": 0.05,
+          "growth": 1.8950133334268702,
+          "novelty": 0.06950312852859497,
+          "size": 93
+        },
+        {
+          "cycle": 2,
+          "uid": 3,
+          "label": "benign_stable",
+          "emergence": 0.03486728072166443,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6973456144332886,
+          "size": 5
+        },
+        {
+          "cycle": 3,
+          "uid": 3,
+          "label": "benign_stable",
+          "emergence": 0.01023730215598145,
+          "density": 0.05,
+          "growth": 1.7884573603642702,
+          "novelty": 0.11448192596435547,
+          "size": 11
+        },
+        {
+          "cycle": 3,
+          "uid": 1,
+          "label": "benign_stable",
+          "emergence": 0.0011840381291656802,
+          "density": 0.05,
+          "growth": 1.092373320131015,
+          "novelty": 0.021678268909454346,
+          "size": 102
+        },
+        {
+          "cycle": 3,
+          "uid": 4,
+          "label": "benign_stable",
+          "emergence": 0.02700173556804657,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5400347113609314,
+          "size": 7
+        },
+        {
+          "cycle": 4,
+          "uid": 5,
+          "label": "benign_stable",
+          "emergence": 0.02663826644420624,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5327653288841248,
+          "size": 5
+        },
+        {
+          "cycle": 4,
+          "uid": 1,
+          "label": "benign_stable",
+          "emergence": 0.002013396910525761,
+          "density": 0.05,
+          "growth": 0.9497381652191117,
+          "novelty": 0.04239898920059204,
+          "size": 97
+        },
+        {
+          "cycle": 4,
+          "uid": 6,
+          "label": "benign_stable",
+          "emergence": 0.018726745247840883,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.3745349049568176,
+          "size": 7
+        },
+        {
+          "cycle": 5,
+          "uid": 7,
+          "label": "benign_stable",
+          "emergence": 0.017809516191482546,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.3561903238296509,
+          "size": 12
+        },
+        {
+          "cycle": 5,
+          "uid": 8,
+          "label": "benign_stable",
+          "emergence": 0.0288930565355951,
+          "density": 0.06097305440171341,
+          "growth": 1.0,
+          "novelty": 0.47386598587036133,
+          "size": 6
+        },
+        {
+          "cycle": 5,
+          "uid": 1,
+          "label": "benign_stable",
+          "emergence": 0.002671802081158207,
+          "density": 0.05,
+          "growth": 0.769094443350301,
+          "novelty": 0.06947916746139526,
+          "size": 77
+        },
+        {
+          "cycle": 5,
+          "uid": 9,
+          "label": "benign_stable",
+          "emergence": 0.010995745658874512,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.21991491317749023,
+          "size": 25
+        },
+        {
+          "cycle": 6,
+          "uid": 8,
+          "label": "benign_stable",
+          "emergence": 0.010109618196098309,
+          "density": 0.05,
+          "growth": 1.4054651081081644,
+          "novelty": 0.1438615322113037,
+          "size": 9
+        },
+        {
+          "cycle": 6,
+          "uid": 10,
+          "label": "benign_stable",
+          "emergence": 0.023270419239997866,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.4654083847999573,
+          "size": 6
+        },
+        {
+          "cycle": 6,
+          "uid": 9,
+          "label": "benign_stable",
+          "emergence": 0.003334740261299673,
+          "density": 0.05,
+          "growth": 0.8721666284901151,
+          "novelty": 0.0764702558517456,
+          "size": 22
+        },
+        {
+          "cycle": 6,
+          "uid": 11,
+          "label": "benign_stable",
+          "emergence": 0.020303800702095032,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.40607601404190063,
+          "size": 6
+        },
+        {
+          "cycle": 6,
+          "uid": 12,
+          "label": "benign_stable",
+          "emergence": 0.012455841898918152,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.24911683797836304,
+          "size": 5
+        },
+        {
+          "cycle": 6,
+          "uid": 1,
+          "label": "benign_stable",
+          "emergence": 0.0021391971355192935,
+          "density": 0.05,
+          "growth": 0.3697666448506238,
+          "novelty": 0.11570525169372559,
+          "size": 41
+        },
+        {
+          "cycle": 6,
+          "uid": 13,
+          "label": "benign_stable",
+          "emergence": 0.017755258083343505,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.3551051616668701,
+          "size": 5
+        },
+        {
+          "cycle": 6,
+          "uid": 14,
+          "label": "benign_stable",
+          "emergence": 0.01937367916107178,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.38747358322143555,
+          "size": 10
+        },
+        {
+          "cycle": 7,
+          "uid": 8,
+          "label": "benign_stable",
+          "emergence": 0.0052950563442396865,
+          "density": 0.05,
+          "growth": 1.2006706954621513,
+          "novelty": 0.08820164203643799,
+          "size": 11
+        },
+        {
+          "cycle": 7,
+          "uid": 14,
+          "label": "benign_stable",
+          "emergence": 0.010071783211379002,
+          "density": 0.05,
+          "growth": 1.6418538861723948,
+          "novelty": 0.1226879358291626,
+          "size": 19
+        },
+        {
+          "cycle": 7,
+          "uid": 11,
+          "label": "benign_stable",
+          "emergence": 0.008044071746224133,
+          "density": 0.05,
+          "growth": 1.2876820724517808,
+          "novelty": 0.12493878602981567,
+          "size": 8
+        },
+        {
+          "cycle": 7,
+          "uid": 15,
+          "label": "benign_stable",
+          "emergence": 0.01609387993812561,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.3218775987625122,
+          "size": 8
+        },
+        {
+          "cycle": 7,
+          "uid": 1,
+          "label": "benign_stable",
+          "emergence": 0.0015051123904386483,
+          "density": 0.05,
+          "growth": 0.6876253149578475,
+          "novelty": 0.04377710819244385,
+          "size": 30
+        },
+        {
+          "cycle": 7,
+          "uid": 16,
+          "label": "benign_stable",
+          "emergence": 0.00859028697013855,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.171805739402771,
+          "size": 14
+        },
+        {
+          "cycle": 8,
+          "uid": 17,
+          "label": "benign_stable",
+          "emergence": 0.020749980211257936,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.4149996042251587,
+          "size": 6
+        },
+        {
+          "cycle": 8,
+          "uid": 18,
+          "label": "benign_trend",
+          "emergence": 0.02883061468601227,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5766122937202454,
+          "size": 9
+        },
+        {
+          "cycle": 8,
+          "uid": 19,
+          "label": "attack",
+          "emergence": 0.03186538815498352,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6373077630996704,
+          "size": 5
+        },
+        {
+          "cycle": 8,
+          "uid": 20,
+          "label": "benign_trend",
+          "emergence": 0.032969075441360476,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6593815088272095,
+          "size": 9
+        },
+        {
+          "cycle": 8,
+          "uid": 21,
+          "label": "benign_stable",
+          "emergence": 0.013175857067108155,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.2635171413421631,
+          "size": 8
+        },
+        {
+          "cycle": 8,
+          "uid": 22,
+          "label": "benign_stable",
+          "emergence": 0.0073668211698532104,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.1473364233970642,
+          "size": 11
+        },
+        {
+          "cycle": 8,
+          "uid": 11,
+          "label": "benign_stable",
+          "emergence": 0.001666906721877466,
+          "density": 0.05,
+          "growth": 0.8664686073754774,
+          "novelty": 0.038475871086120605,
+          "size": 7
+        },
+        {
+          "cycle": 8,
+          "uid": 1,
+          "label": "benign_stable",
+          "emergence": 0.002299308378908009,
+          "density": 0.05,
+          "growth": 1.125163142954006,
+          "novelty": 0.04087066650390625,
+          "size": 34
+        },
+        {
+          "cycle": 8,
+          "uid": 23,
+          "label": "benign_stable",
+          "emergence": 0.006683337688446045,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.1336667537689209,
+          "size": 7
+        },
+        {
+          "cycle": 9,
+          "uid": 20,
+          "label": "benign_trend",
+          "emergence": 0.00523110190849366,
+          "density": 0.05885608201792456,
+          "growth": 1.2006706954621513,
+          "novelty": 0.07402491569519043,
+          "size": 11
+        },
+        {
+          "cycle": 9,
+          "uid": 21,
+          "label": "benign_stable",
+          "emergence": 0.004862630060755082,
+          "density": 0.05,
+          "growth": 1.1177830356563834,
+          "novelty": 0.0870048999786377,
+          "size": 9
+        },
+        {
+          "cycle": 9,
+          "uid": 24,
+          "label": "benign_trend",
+          "emergence": 0.013975656032562256,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.2795131206512451,
+          "size": 13
+        },
+        {
+          "cycle": 9,
+          "uid": 25,
+          "label": "benign_trend",
+          "emergence": 0.009495580196380617,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.1899116039276123,
+          "size": 5
+        },
+        {
+          "cycle": 9,
+          "uid": 26,
+          "label": "attack",
+          "emergence": 0.008757978677749634,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.17515957355499268,
+          "size": 6
+        },
+        {
+          "cycle": 9,
+          "uid": 27,
+          "label": "attack",
+          "emergence": 0.011976724863052369,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.23953449726104736,
+          "size": 9
+        },
+        {
+          "cycle": 9,
+          "uid": 28,
+          "label": "benign_stable",
+          "emergence": 0.01048511266708374,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.2097022533416748,
+          "size": 10
+        },
+        {
+          "cycle": 9,
+          "uid": 22,
+          "label": "benign_stable",
+          "emergence": 0.003760766083426605,
+          "density": 0.050539521798438666,
+          "growth": 1.0870113769896297,
+          "novelty": 0.06845593452453613,
+          "size": 12
+        },
+        {
+          "cycle": 9,
+          "uid": 1,
+          "label": "benign_stable",
+          "emergence": 0.0021365074540488685,
+          "density": 0.05,
+          "growth": 1.1872115420881464,
+          "novelty": 0.03599202632904053,
+          "size": 41
+        },
+        {
+          "cycle": 10,
+          "uid": 29,
+          "label": "benign_stable",
+          "emergence": 0.0086592435836792,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.17318487167358398,
+          "size": 238
+        },
+        {
+          "cycle": 10,
+          "uid": 22,
+          "label": "benign_stable",
+          "emergence": 0.00892740328202082,
+          "density": 0.05,
+          "growth": 1.4054651081081644,
+          "novelty": 0.12703841924667358,
+          "size": 18
+        },
+        {
+          "cycle": 11,
+          "uid": 30,
+          "label": "benign_trend",
+          "emergence": 0.01364373564720154,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.27287471294403076,
+          "size": 18
+        },
+        {
+          "cycle": 11,
+          "uid": 31,
+          "label": "benign_trend",
+          "emergence": 0.010749268531799317,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.21498537063598633,
+          "size": 14
+        },
+        {
+          "cycle": 11,
+          "uid": 32,
+          "label": "attack",
+          "emergence": 0.1539132251305007,
+          "density": 0.27028796738072797,
+          "growth": 1.0,
+          "novelty": 0.5694416463375092,
+          "size": 5
+        },
+        {
+          "cycle": 11,
+          "uid": 33,
+          "label": "attack",
+          "emergence": 0.01439581093656405,
+          "density": 0.05498322639948745,
+          "growth": 1.0,
+          "novelty": 0.2618218660354614,
+          "size": 44
+        },
+        {
+          "cycle": 11,
+          "uid": 34,
+          "label": "benign_stable",
+          "emergence": 0.0028409391641616823,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.05681878328323364,
+          "size": 31
+        },
+        {
+          "cycle": 12,
+          "uid": 35,
+          "label": "benign_trend",
+          "emergence": 0.028616017103195193,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5723203420639038,
+          "size": 6
+        },
+        {
+          "cycle": 12,
+          "uid": 30,
+          "label": "benign_stable",
+          "emergence": 0.004516648712667517,
+          "density": 0.05,
+          "growth": 0.8822169643436165,
+          "novelty": 0.10239315032958984,
+          "size": 16
+        },
+        {
+          "cycle": 12,
+          "uid": 31,
+          "label": "benign_trend",
+          "emergence": 0.0015611048227166329,
+          "density": 0.05,
+          "growth": 0.3068528194400547,
+          "novelty": 0.10174942016601562,
+          "size": 7
+        },
+        {
+          "cycle": 12,
+          "uid": 36,
+          "label": "benign_stable",
+          "emergence": 0.03132449984550476,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6264899969100952,
+          "size": 5
+        },
+        {
+          "cycle": 12,
+          "uid": 37,
+          "label": "benign_stable",
+          "emergence": 0.009819474816322327,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.19638949632644653,
+          "size": 5
+        },
+        {
+          "cycle": 12,
+          "uid": 38,
+          "label": "benign_stable",
+          "emergence": 0.006704497337341309,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.13408994674682617,
+          "size": 5
+        },
+        {
+          "cycle": 12,
+          "uid": 32,
+          "label": "attack",
+          "emergence": 0.012375446640111582,
+          "density": 0.22355097299596985,
+          "growth": 1.587786664902119,
+          "novelty": 0.03486520051956177,
+          "size": 9
+        },
+        {
+          "cycle": 12,
+          "uid": 33,
+          "label": "attack",
+          "emergence": 0.0016793657049689972,
+          "density": 0.05,
+          "growth": 1.2047944126460133,
+          "novelty": 0.0278780460357666,
+          "size": 54
+        },
+        {
+          "cycle": 12,
+          "uid": 34,
+          "label": "benign_stable",
+          "emergence": 0.0003690415620803834,
+          "density": 0.05,
+          "growth": -0.0360919316867756,
+          "novelty": 0.07380831241607666,
+          "size": 11
+        },
+        {
+          "cycle": 13,
+          "uid": 39,
+          "label": "benign_stable",
+          "emergence": 0.02657100707292557,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5314201414585114,
+          "size": 5
+        },
+        {
+          "cycle": 13,
+          "uid": 30,
+          "label": "benign_trend",
+          "emergence": 0.0018731687336520167,
+          "density": 0.05,
+          "growth": 0.8664686073754774,
+          "novelty": 0.04323685169219971,
+          "size": 14
+        },
+        {
+          "cycle": 13,
+          "uid": 36,
+          "label": "benign_stable",
+          "emergence": 0.006944462009952214,
+          "density": 0.05,
+          "growth": 1.4700036292457357,
+          "novelty": 0.09448224306106567,
+          "size": 8
+        },
+        {
+          "cycle": 13,
+          "uid": 40,
+          "label": "attack",
+          "emergence": 0.011303338918730695,
+          "density": 0.0653849856674468,
+          "growth": 1.0,
+          "novelty": 0.1728736162185669,
+          "size": 17
+        },
+        {
+          "cycle": 13,
+          "uid": 37,
+          "label": "benign_stable",
+          "emergence": 0.00401879855509334,
+          "density": 0.05,
+          "growth": 1.1823215567939547,
+          "novelty": 0.06798148155212402,
+          "size": 6
+        },
+        {
+          "cycle": 13,
+          "uid": 41,
+          "label": "attack",
+          "emergence": 0.007643294334411622,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.15286588668823242,
+          "size": 6
+        },
+        {
+          "cycle": 13,
+          "uid": 33,
+          "label": "attack",
+          "emergence": 0.0010983111776841352,
+          "density": 0.05,
+          "growth": 0.3068528194400547,
+          "novelty": 0.07158553600311279,
+          "size": 27
+        },
+        {
+          "cycle": 13,
+          "uid": 42,
+          "label": "attack",
+          "emergence": 0.2685127445001357,
+          "density": 0.5105674669498091,
+          "growth": 1.0,
+          "novelty": 0.5259104073047638,
+          "size": 5
+        },
+        {
+          "cycle": 14,
+          "uid": 43,
+          "label": "benign_stable",
+          "emergence": 0.030557826161384583,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6111565232276917,
+          "size": 5
+        },
+        {
+          "cycle": 14,
+          "uid": 44,
+          "label": "benign_stable",
+          "emergence": 0.025757366418838502,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.51514732837677,
+          "size": 7
+        },
+        {
+          "cycle": 14,
+          "uid": 45,
+          "label": "benign_stable",
+          "emergence": 0.009494855999946594,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.18989711999893188,
+          "size": 8
+        },
+        {
+          "cycle": 14,
+          "uid": 36,
+          "label": "benign_stable",
+          "emergence": 0.0028002053499221803,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.056004106998443604,
+          "size": 8
+        },
+        {
+          "cycle": 14,
+          "uid": 37,
+          "label": "benign_stable",
+          "emergence": 0.0050565229395463955,
+          "density": 0.05,
+          "growth": 1.6931471805599454,
+          "novelty": 0.05972927808761597,
+          "size": 12
+        },
+        {
+          "cycle": 14,
+          "uid": 46,
+          "label": "benign_stable",
+          "emergence": 0.008860605955123902,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.17721211910247803,
+          "size": 8
+        },
+        {
+          "cycle": 14,
+          "uid": 47,
+          "label": "benign_stable",
+          "emergence": 0.01656356453895569,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.33127129077911377,
+          "size": 7
+        },
+        {
+          "cycle": 14,
+          "uid": 48,
+          "label": "attack",
+          "emergence": 0.04431914216101149,
+          "density": 0.07710143098163362,
+          "growth": 1.0,
+          "novelty": 0.5748160779476166,
+          "size": 5
+        },
+        {
+          "cycle": 14,
+          "uid": 49,
+          "label": "attack",
+          "emergence": 0.005294604351065172,
+          "density": 0.1589360468358339,
+          "growth": 1.0,
+          "novelty": 0.03331279754638672,
+          "size": 9
+        },
+        {
+          "cycle": 14,
+          "uid": 50,
+          "label": "benign_stable",
+          "emergence": 0.009806966781616211,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.19613933563232422,
+          "size": 5
+        },
+        {
+          "cycle": 14,
+          "uid": 42,
+          "label": "attack",
+          "emergence": 0.004455345521048811,
+          "density": 0.5073757634166705,
+          "growth": 1.336472236621213,
+          "novelty": 0.006570398807525635,
+          "size": 7
+        },
+        {
+          "cycle": 14,
+          "uid": 33,
+          "label": "attack",
+          "emergence": 0.0011896216601240506,
+          "density": 0.05,
+          "growth": 0.2691124914572076,
+          "novelty": 0.08841073513031006,
+          "size": 13
+        },
+        {
+          "cycle": 14,
+          "uid": 51,
+          "label": "attack",
+          "emergence": 0.009953899884524206,
+          "density": 0.0654645384930645,
+          "growth": 1.0,
+          "novelty": 0.15205025672912598,
+          "size": 9
+        },
+        {
+          "cycle": 15,
+          "uid": 52,
+          "label": "benign_stable",
+          "emergence": 0.02753093391656876,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5506186783313751,
+          "size": 5
+        },
+        {
+          "cycle": 15,
+          "uid": 37,
+          "label": "benign_stable",
+          "emergence": 0.0014343242501380685,
+          "density": 0.05,
+          "growth": 0.4610034992673131,
+          "novelty": 0.062226176261901855,
+          "size": 7
+        },
+        {
+          "cycle": 15,
+          "uid": 53,
+          "label": "benign_stable",
+          "emergence": 0.008662182092666627,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.17324364185333252,
+          "size": 8
+        },
+        {
+          "cycle": 15,
+          "uid": 47,
+          "label": "benign_stable",
+          "emergence": 0.004284189474210973,
+          "density": 0.05,
+          "growth": 1.1335313926245225,
+          "novelty": 0.07559013366699219,
+          "size": 8
+        },
+        {
+          "cycle": 15,
+          "uid": 54,
+          "label": "benign_stable",
+          "emergence": 0.009246885776519775,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.1849377155303955,
+          "size": 7
+        },
+        {
+          "cycle": 15,
+          "uid": 48,
+          "label": "attack",
+          "emergence": 0.008240772531033022,
+          "density": 0.0750915745405438,
+          "growth": 1.587786664902119,
+          "novelty": 0.06911695003509521,
+          "size": 9
+        },
+        {
+          "cycle": 15,
+          "uid": 55,
+          "label": "attack",
+          "emergence": 0.00434158444404602,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.08683168888092041,
+          "size": 11
+        },
+        {
+          "cycle": 15,
+          "uid": 56,
+          "label": "attack",
+          "emergence": 0.025107888877391817,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5021577775478363,
+          "size": 6
+        },
+        {
+          "cycle": 15,
+          "uid": 49,
+          "label": "attack",
+          "emergence": 0.0017172057027803032,
+          "density": 0.153440314795976,
+          "growth": 1.1053605156578263,
+          "novelty": 0.010124623775482178,
+          "size": 10
+        },
+        {
+          "cycle": 15,
+          "uid": 51,
+          "label": "attack",
+          "emergence": 0.01148796365309921,
+          "density": 0.06469597808103723,
+          "growth": 1.8472978603872037,
+          "novelty": 0.0961233377456665,
+          "size": 21
+        },
+        {
+          "cycle": 15,
+          "uid": 33,
+          "label": "attack",
+          "emergence": 0.0030782747149162375,
+          "density": 0.05,
+          "growth": 0.5144921842182992,
+          "novelty": 0.11966264247894287,
+          "size": 8
+        },
+        {
+          "cycle": 15,
+          "uid": 42,
+          "label": "attack",
+          "emergence": 0.001224960730207574,
+          "density": 0.49305289482774806,
+          "growth": 1.0,
+          "novelty": 0.002484440803527832,
+          "size": 7
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "trend_windows": {
+        "coding_topic": [
+          5,
+          9,
+          13
+        ]
+      },
+      "attack_onset_cycle": 8,
+      "attack_detection_cycle": 9,
+      "benign_cluster_rate": 0.10526315789473684,
+      "queue_pollution": 0.26666666666666666,
+      "analyst_burden": 0.26666666666666666,
+      "n_topk_slots": 38,
+      "per_cycle_log": [
+        {
+          "cycle": 1,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 2,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 3,
+          "n_queue": 3,
+          "n_clusters": 3,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 4,
+          "n_queue": 3,
+          "n_clusters": 9,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 5,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 6,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 7,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 8,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 9,
+          "n_queue": 3,
+          "n_clusters": 7,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 3
+        },
+        {
+          "cycle": 10,
+          "n_queue": 3,
+          "n_clusters": 10,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 1
+        },
+        {
+          "cycle": 11,
+          "n_queue": 3,
+          "n_clusters": 8,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 2
+        },
+        {
+          "cycle": 12,
+          "n_queue": 3,
+          "n_clusters": 7,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 2
+        },
+        {
+          "cycle": 13,
+          "n_queue": 3,
+          "n_clusters": 12,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 2
+        },
+        {
+          "cycle": 14,
+          "n_queue": 3,
+          "n_clusters": 12,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 2
+        },
+        {
+          "cycle": 15,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        }
+      ],
+      "cluster_records": [
+        {
+          "cycle": 1,
+          "uid": 1,
+          "label": "benign_stable",
+          "emergence": 0.024798688292503358,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.49597376585006714,
+          "size": 18
+        },
+        {
+          "cycle": 1,
+          "uid": 2,
+          "label": "benign_stable",
+          "emergence": 0.024798688292503358,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.49597376585006714,
+          "size": 6
+        },
+        {
+          "cycle": 2,
+          "uid": 3,
+          "label": "benign_stable",
+          "emergence": 0.009313440322875977,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.18626880645751953,
+          "size": 109
+        },
+        {
+          "cycle": 2,
+          "uid": 4,
+          "label": "benign_stable",
+          "emergence": 0.03303593397140503,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6607186794281006,
+          "size": 13
+        },
+        {
+          "cycle": 3,
+          "uid": 5,
+          "label": "benign_stable",
+          "emergence": 0.0347146600484848,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.694293200969696,
+          "size": 5
+        },
+        {
+          "cycle": 3,
+          "uid": 3,
+          "label": "benign_stable",
+          "emergence": 0.001145124646537763,
+          "density": 0.05,
+          "growth": 1.4145975916714368,
+          "novelty": 0.01619011163711548,
+          "size": 165
+        },
+        {
+          "cycle": 3,
+          "uid": 4,
+          "label": "benign_stable",
+          "emergence": 0.004427656525229918,
+          "density": 0.05,
+          "growth": 1.074107972153722,
+          "novelty": 0.08244341611862183,
+          "size": 14
+        },
+        {
+          "cycle": 4,
+          "uid": 6,
+          "label": "benign_stable",
+          "emergence": 0.032085280120372775,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6417056024074554,
+          "size": 5
+        },
+        {
+          "cycle": 4,
+          "uid": 7,
+          "label": "benign_stable",
+          "emergence": 0.02750549614429474,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5501099228858948,
+          "size": 9
+        },
+        {
+          "cycle": 4,
+          "uid": 8,
+          "label": "benign_stable",
+          "emergence": 0.018476295471191406,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.3695259094238281,
+          "size": 5
+        },
+        {
+          "cycle": 4,
+          "uid": 9,
+          "label": "benign_stable",
+          "emergence": 0.020766520500183107,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.4153304100036621,
+          "size": 5
+        },
+        {
+          "cycle": 4,
+          "uid": 10,
+          "label": "benign_stable",
+          "emergence": 0.011651962995529175,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.2330392599105835,
+          "size": 11
+        },
+        {
+          "cycle": 4,
+          "uid": 4,
+          "label": "benign_stable",
+          "emergence": 0.003800445553184118,
+          "density": 0.05,
+          "growth": 0.5581672477209608,
+          "novelty": 0.13617587089538574,
+          "size": 9
+        },
+        {
+          "cycle": 4,
+          "uid": 11,
+          "label": "benign_stable",
+          "emergence": 0.02527023483766561,
+          "density": 0.08416409816948286,
+          "growth": 1.0,
+          "novelty": 0.3002495765686035,
+          "size": 12
+        },
+        {
+          "cycle": 4,
+          "uid": 12,
+          "label": "benign_stable",
+          "emergence": 0.029403305070498525,
+          "density": 0.06940468540065155,
+          "growth": 1.0,
+          "novelty": 0.4236501455307007,
+          "size": 8
+        },
+        {
+          "cycle": 4,
+          "uid": 13,
+          "label": "benign_stable",
+          "emergence": 0.014399364590644836,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.28798729181289673,
+          "size": 14
+        },
+        {
+          "cycle": 5,
+          "uid": 14,
+          "label": "benign_stable",
+          "emergence": 0.0023958563804626467,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.04791712760925293,
+          "size": 181
+        },
+        {
+          "cycle": 5,
+          "uid": 15,
+          "label": "benign_stable",
+          "emergence": 0.031934261322021484,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6386852264404297,
+          "size": 6
+        },
+        {
+          "cycle": 6,
+          "uid": 14,
+          "label": "benign_stable",
+          "emergence": 0.002888983049429757,
+          "density": 0.05,
+          "growth": 1.7979550573531953,
+          "novelty": 0.03213632106781006,
+          "size": 402
+        },
+        {
+          "cycle": 6,
+          "uid": 16,
+          "label": "benign_trend",
+          "emergence": 0.03934699296951294,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.7869398593902588,
+          "size": 5
+        },
+        {
+          "cycle": 7,
+          "uid": 14,
+          "label": "benign_stable",
+          "emergence": 0.0005211771623467153,
+          "density": 0.05,
+          "growth": 0.41519396323601887,
+          "novelty": 0.02510523796081543,
+          "size": 224
+        },
+        {
+          "cycle": 7,
+          "uid": 17,
+          "label": "benign_trend",
+          "emergence": 0.013068011403083802,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.261360228061676,
+          "size": 15
+        },
+        {
+          "cycle": 8,
+          "uid": 14,
+          "label": "benign_stable",
+          "emergence": 0.0008717208786426812,
+          "density": 0.05,
+          "growth": 1.0564140892800913,
+          "novelty": 0.01650339365005493,
+          "size": 237
+        },
+        {
+          "cycle": 8,
+          "uid": 17,
+          "label": "benign_trend",
+          "emergence": 0.0050078882173847745,
+          "density": 0.05,
+          "growth": 1.2876820724517808,
+          "novelty": 0.07778143882751465,
+          "size": 20
+        },
+        {
+          "cycle": 9,
+          "uid": 17,
+          "label": "benign_trend",
+          "emergence": 0.006287278634457417,
+          "density": 0.05,
+          "growth": 1.262364264467491,
+          "novelty": 0.09961116313934326,
+          "size": 26
+        },
+        {
+          "cycle": 9,
+          "uid": 18,
+          "label": "attack",
+          "emergence": 0.031704628467559816,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6340925693511963,
+          "size": 6
+        },
+        {
+          "cycle": 9,
+          "uid": 19,
+          "label": "attack",
+          "emergence": 0.03392032980918885,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6784065961837769,
+          "size": 6
+        },
+        {
+          "cycle": 9,
+          "uid": 20,
+          "label": "benign_stable",
+          "emergence": 0.010668203234672546,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.21336406469345093,
+          "size": 5
+        },
+        {
+          "cycle": 9,
+          "uid": 21,
+          "label": "attack",
+          "emergence": 0.11792859750652557,
+          "density": 0.19104442338476266,
+          "growth": 1.0,
+          "novelty": 0.6172836422920227,
+          "size": 6
+        },
+        {
+          "cycle": 9,
+          "uid": 22,
+          "label": "benign_trend",
+          "emergence": 0.00671705841282442,
+          "density": 0.06603925187746378,
+          "growth": 1.0,
+          "novelty": 0.10171312093734741,
+          "size": 69
+        },
+        {
+          "cycle": 9,
+          "uid": 23,
+          "label": "benign_stable",
+          "emergence": 0.018786132335662842,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.37572264671325684,
+          "size": 14
+        },
+        {
+          "cycle": 10,
+          "uid": 17,
+          "label": "benign_trend",
+          "emergence": 0.0033077973635764553,
+          "density": 0.05,
+          "growth": 1.1758906664636641,
+          "novelty": 0.05626028776168823,
+          "size": 31
+        },
+        {
+          "cycle": 10,
+          "uid": 24,
+          "label": "benign_stable",
+          "emergence": 0.01834758520126343,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.36695170402526855,
+          "size": 5
+        },
+        {
+          "cycle": 10,
+          "uid": 21,
+          "label": "attack",
+          "emergence": 0.004045044687935647,
+          "density": 0.3090871556481386,
+          "growth": 1.4054651081081644,
+          "novelty": 0.009311556816101074,
+          "size": 9
+        },
+        {
+          "cycle": 10,
+          "uid": 25,
+          "label": "attack",
+          "emergence": 0.007533961534500123,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.15067923069000244,
+          "size": 18
+        },
+        {
+          "cycle": 10,
+          "uid": 26,
+          "label": "benign_stable",
+          "emergence": 0.020085650682449344,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.4017130136489868,
+          "size": 5
+        },
+        {
+          "cycle": 10,
+          "uid": 27,
+          "label": "benign_stable",
+          "emergence": 0.008172929286956787,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.16345858573913574,
+          "size": 6
+        },
+        {
+          "cycle": 10,
+          "uid": 23,
+          "label": "benign_stable",
+          "emergence": 0.0022679614117647635,
+          "density": 0.06589503306381811,
+          "growth": 0.7588379431831119,
+          "novelty": 0.045355916023254395,
+          "size": 11
+        },
+        {
+          "cycle": 10,
+          "uid": 28,
+          "label": "attack",
+          "emergence": 0.03590615661103534,
+          "density": 0.06714402836889921,
+          "growth": 1.0,
+          "novelty": 0.5347632169723511,
+          "size": 8
+        },
+        {
+          "cycle": 10,
+          "uid": 22,
+          "label": "benign_trend",
+          "emergence": 0.00043893969517596113,
+          "density": 0.05,
+          "growth": 0.6160410971127992,
+          "novelty": 0.014250338077545166,
+          "size": 47
+        },
+        {
+          "cycle": 10,
+          "uid": 29,
+          "label": "benign_stable",
+          "emergence": 0.02102075815200806,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.42041516304016113,
+          "size": 5
+        },
+        {
+          "cycle": 11,
+          "uid": 30,
+          "label": "benign_trend",
+          "emergence": 0.013662347197532655,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.2732469439506531,
+          "size": 5
+        },
+        {
+          "cycle": 11,
+          "uid": 17,
+          "label": "benign_trend",
+          "emergence": 0.0009492661517432907,
+          "density": 0.05,
+          "growth": 0.20507012513011236,
+          "novelty": 0.0925796627998352,
+          "size": 14
+        },
+        {
+          "cycle": 11,
+          "uid": 23,
+          "label": "benign_stable",
+          "emergence": 0.0037534296512603763,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.07506859302520752,
+          "size": 11
+        },
+        {
+          "cycle": 11,
+          "uid": 28,
+          "label": "attack",
+          "emergence": 0.006146388017948936,
+          "density": 0.13086834060137567,
+          "growth": 1.0,
+          "novelty": 0.04696619510650635,
+          "size": 8
+        },
+        {
+          "cycle": 11,
+          "uid": 21,
+          "label": "attack",
+          "emergence": 0.00503361197134207,
+          "density": 0.2867727577534011,
+          "growth": 0.8822169643436165,
+          "novelty": 0.01989603042602539,
+          "size": 8
+        },
+        {
+          "cycle": 11,
+          "uid": 22,
+          "label": "benign_stable",
+          "emergence": 0.001900853138363889,
+          "density": 0.05,
+          "growth": 1.4125322753312568,
+          "novelty": 0.026914119720458984,
+          "size": 71
+        },
+        {
+          "cycle": 11,
+          "uid": 25,
+          "label": "attack",
+          "emergence": 0.01983300737656426,
+          "density": 0.1293442989179232,
+          "growth": 1.0540672212702757,
+          "novelty": 0.14546984434127808,
+          "size": 19
+        },
+        {
+          "cycle": 11,
+          "uid": 31,
+          "label": "attack",
+          "emergence": 0.016391974687576295,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.3278394937515259,
+          "size": 5
+        },
+        {
+          "cycle": 12,
+          "uid": 17,
+          "label": "benign_trend",
+          "emergence": 0.0015876443143491236,
+          "density": 0.05,
+          "growth": 0.3068528194400547,
+          "novelty": 0.10347920656204224,
+          "size": 7
+        },
+        {
+          "cycle": 12,
+          "uid": 21,
+          "label": "attack",
+          "emergence": 0.0041899737788511976,
+          "density": 0.36217413617551497,
+          "growth": 0.5299963707542644,
+          "novelty": 0.02182835340499878,
+          "size": 5
+        },
+        {
+          "cycle": 12,
+          "uid": 32,
+          "label": "benign_stable",
+          "emergence": 0.016206875443458557,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.32413750886917114,
+          "size": 14
+        },
+        {
+          "cycle": 12,
+          "uid": 23,
+          "label": "benign_stable",
+          "emergence": 0.0007566577399819051,
+          "density": 0.05,
+          "growth": 0.21154263963572983,
+          "novelty": 0.07153713703155518,
+          "size": 5
+        },
+        {
+          "cycle": 12,
+          "uid": 22,
+          "label": "benign_stable",
+          "emergence": 0.0018256019772313545,
+          "density": 0.05,
+          "growth": 0.7626718136938337,
+          "novelty": 0.047873854637145996,
+          "size": 56
+        },
+        {
+          "cycle": 12,
+          "uid": 25,
+          "label": "attack",
+          "emergence": 0.004753358691030091,
+          "density": 0.08508120769211723,
+          "growth": 1.666478933477784,
+          "novelty": 0.03352487087249756,
+          "size": 37
+        },
+        {
+          "cycle": 12,
+          "uid": 28,
+          "label": "attack",
+          "emergence": 0.006313806633012591,
+          "density": 0.14475017434040185,
+          "growth": 1.2231435513142097,
+          "novelty": 0.03566110134124756,
+          "size": 10
+        },
+        {
+          "cycle": 13,
+          "uid": 33,
+          "label": "benign_stable",
+          "emergence": 0.04125858768820763,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.8251717537641525,
+          "size": 5
+        },
+        {
+          "cycle": 13,
+          "uid": 34,
+          "label": "benign_stable",
+          "emergence": 0.01645820736885071,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.32916414737701416,
+          "size": 10
+        },
+        {
+          "cycle": 13,
+          "uid": 35,
+          "label": "benign_stable",
+          "emergence": 0.01925395727157593,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.38507914543151855,
+          "size": 7
+        },
+        {
+          "cycle": 13,
+          "uid": 36,
+          "label": "benign_stable",
+          "emergence": 0.013510054349899292,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.27020108699798584,
+          "size": 5
+        },
+        {
+          "cycle": 13,
+          "uid": 21,
+          "label": "attack",
+          "emergence": 0.0034287940789162223,
+          "density": 0.05,
+          "growth": 1.1823215567939547,
+          "novelty": 0.058001041412353516,
+          "size": 6
+        },
+        {
+          "cycle": 13,
+          "uid": 37,
+          "label": "benign_stable",
+          "emergence": 0.020146626234054568,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.4029325246810913,
+          "size": 6
+        },
+        {
+          "cycle": 13,
+          "uid": 22,
+          "label": "benign_stable",
+          "emergence": 0.0008261307655586293,
+          "density": 0.05,
+          "growth": 0.37584569092700615,
+          "novelty": 0.043961167335510254,
+          "size": 30
+        },
+        {
+          "cycle": 13,
+          "uid": 28,
+          "label": "attack",
+          "emergence": 0.005508565749189284,
+          "density": 0.05337843193773095,
+          "growth": 1.095310179804325,
+          "novelty": 0.09421837329864502,
+          "size": 11
+        },
+        {
+          "cycle": 13,
+          "uid": 38,
+          "label": "attack",
+          "emergence": 0.02355748414993286,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.4711496829986572,
+          "size": 5
+        },
+        {
+          "cycle": 13,
+          "uid": 39,
+          "label": "attack",
+          "emergence": 0.03815712759846404,
+          "density": 0.46448193693940887,
+          "growth": 1.0,
+          "novelty": 0.08214986324310303,
+          "size": 5
+        },
+        {
+          "cycle": 13,
+          "uid": 25,
+          "label": "attack",
+          "emergence": 0.0007730311119643762,
+          "density": 0.10331575948011583,
+          "growth": 0.09713228845798572,
+          "novelty": 0.07482218742370605,
+          "size": 15
+        },
+        {
+          "cycle": 13,
+          "uid": 40,
+          "label": "attack",
+          "emergence": 0.008145037293434144,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.16290074586868286,
+          "size": 8
+        },
+        {
+          "cycle": 14,
+          "uid": 41,
+          "label": "benign_stable",
+          "emergence": 0.031322580575943,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6264516115188599,
+          "size": 5
+        },
+        {
+          "cycle": 14,
+          "uid": 34,
+          "label": "benign_stable",
+          "emergence": 0.0015324848602711473,
+          "density": 0.05,
+          "growth": 0.3068528194400547,
+          "novelty": 0.099884033203125,
+          "size": 5
+        },
+        {
+          "cycle": 14,
+          "uid": 35,
+          "label": "benign_stable",
+          "emergence": 0.0033937246216987006,
+          "density": 0.05,
+          "growth": 0.663527763378787,
+          "novelty": 0.10229337215423584,
+          "size": 5
+        },
+        {
+          "cycle": 14,
+          "uid": 42,
+          "label": "benign_stable",
+          "emergence": 0.01453399658203125,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.290679931640625,
+          "size": 7
+        },
+        {
+          "cycle": 14,
+          "uid": 21,
+          "label": "attack",
+          "emergence": 0.009856013757888245,
+          "density": 0.3154876172601945,
+          "growth": 1.1541506798272583,
+          "novelty": 0.027068018913269043,
+          "size": 7
+        },
+        {
+          "cycle": 14,
+          "uid": 22,
+          "label": "benign_stable",
+          "emergence": 0.0004294908086710024,
+          "density": 0.05,
+          "growth": 0.1637519757993814,
+          "novelty": 0.05245625972747803,
+          "size": 13
+        },
+        {
+          "cycle": 14,
+          "uid": 43,
+          "label": "attack",
+          "emergence": 0.027463200688362124,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5492640137672424,
+          "size": 5
+        },
+        {
+          "cycle": 14,
+          "uid": 44,
+          "label": "attack",
+          "emergence": 0.019307601451873782,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.3861520290374756,
+          "size": 5
+        },
+        {
+          "cycle": 14,
+          "uid": 28,
+          "label": "attack",
+          "emergence": 0.0006243765354156495,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.012487530708312988,
+          "size": 11
+        },
+        {
+          "cycle": 14,
+          "uid": 40,
+          "label": "attack",
+          "emergence": 0.002739691734313965,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.0547938346862793,
+          "size": 8
+        },
+        {
+          "cycle": 14,
+          "uid": 25,
+          "label": "attack",
+          "emergence": 0.0010669518332218255,
+          "density": 0.05,
+          "growth": 1.064538521137571,
+          "novelty": 0.020045340061187744,
+          "size": 16
+        },
+        {
+          "cycle": 14,
+          "uid": 39,
+          "label": "attack",
+          "emergence": 0.0030585324905776454,
+          "density": 0.3861131110884974,
+          "growth": 1.0,
+          "novelty": 0.007921338081359863,
+          "size": 5
+        },
+        {
+          "cycle": 15,
+          "uid": 45,
+          "label": "benign_stable",
+          "emergence": 0.005085757374763489,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.10171514749526978,
+          "size": 461
+        },
+        {
+          "cycle": 15,
+          "uid": 46,
+          "label": "benign_stable",
+          "emergence": 0.014188989996910095,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.2837797999382019,
+          "size": 10
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "trend_windows": {
+        "coding_topic": [
+          5,
+          9,
+          13
+        ]
+      },
+      "attack_onset_cycle": 8,
+      "attack_detection_cycle": 9,
+      "benign_cluster_rate": 0.08823529411764706,
+      "queue_pollution": 0.2,
+      "analyst_burden": 0.2,
+      "n_topk_slots": 34,
+      "per_cycle_log": [
+        {
+          "cycle": 1,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 2,
+          "n_queue": 3,
+          "n_clusters": 4,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 3,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 4,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 5,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 6,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 7,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 8,
+          "n_queue": 3,
+          "n_clusters": 4,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 9,
+          "n_queue": 3,
+          "n_clusters": 7,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 1
+        },
+        {
+          "cycle": 10,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 11,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 12,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 13,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 14,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 1
+        },
+        {
+          "cycle": 15,
+          "n_queue": 3,
+          "n_clusters": 4,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        }
+      ],
+      "cluster_records": [
+        {
+          "cycle": 1,
+          "uid": 1,
+          "label": "benign_stable",
+          "emergence": 0.029990249872207643,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5998049974441528,
+          "size": 32
+        },
+        {
+          "cycle": 1,
+          "uid": 2,
+          "label": "benign_stable",
+          "emergence": 0.029990249872207643,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5998049974441528,
+          "size": 10
+        },
+        {
+          "cycle": 2,
+          "uid": 3,
+          "label": "benign_stable",
+          "emergence": 0.013138139247894288,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.26276278495788574,
+          "size": 28
+        },
+        {
+          "cycle": 2,
+          "uid": 4,
+          "label": "benign_stable",
+          "emergence": 0.017911505699157716,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.3582301139831543,
+          "size": 5
+        },
+        {
+          "cycle": 2,
+          "uid": 5,
+          "label": "benign_stable",
+          "emergence": 0.01487293541431427,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.2974587082862854,
+          "size": 10
+        },
+        {
+          "cycle": 2,
+          "uid": 2,
+          "label": "benign_stable",
+          "emergence": 0.0055774034616013594,
+          "density": 0.05,
+          "growth": 1.1823215567939547,
+          "novelty": 0.09434664249420166,
+          "size": 12
+        },
+        {
+          "cycle": 3,
+          "uid": 6,
+          "label": "benign_stable",
+          "emergence": 0.003346580266952515,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.06693160533905029,
+          "size": 185
+        },
+        {
+          "cycle": 3,
+          "uid": 7,
+          "label": "benign_stable",
+          "emergence": 0.0414638638496399,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.8292772769927979,
+          "size": 5
+        },
+        {
+          "cycle": 4,
+          "uid": 6,
+          "label": "benign_stable",
+          "emergence": 0.0007005334805287666,
+          "density": 0.05,
+          "growth": 0.915442611971937,
+          "novelty": 0.015304803848266602,
+          "size": 170
+        },
+        {
+          "cycle": 4,
+          "uid": 8,
+          "label": "benign_stable",
+          "emergence": 0.008852767944335939,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.17705535888671875,
+          "size": 9
+        },
+        {
+          "cycle": 5,
+          "uid": 6,
+          "label": "benign_stable",
+          "emergence": 0.0017555829940184757,
+          "density": 0.05,
+          "growth": 1.1268917518546238,
+          "novelty": 0.031157970428466797,
+          "size": 193
+        },
+        {
+          "cycle": 5,
+          "uid": 8,
+          "label": "benign_stable",
+          "emergence": 0.002733038269890114,
+          "density": 0.05,
+          "growth": 1.2006706954621513,
+          "novelty": 0.045525193214416504,
+          "size": 11
+        },
+        {
+          "cycle": 6,
+          "uid": 6,
+          "label": "benign_stable",
+          "emergence": 0.0009365446452386291,
+          "density": 0.05,
+          "growth": 0.8553036235118695,
+          "novelty": 0.021899700164794922,
+          "size": 167
+        },
+        {
+          "cycle": 6,
+          "uid": 8,
+          "label": "benign_stable",
+          "emergence": 0.0011522697691726464,
+          "density": 0.05,
+          "growth": 0.3938641964296844,
+          "novelty": 0.05851101875305176,
+          "size": 6
+        },
+        {
+          "cycle": 7,
+          "uid": 6,
+          "label": "benign_stable",
+          "emergence": 0.002249876011526187,
+          "density": 0.05,
+          "growth": 1.656557733127653,
+          "novelty": 0.027163267135620117,
+          "size": 322
+        },
+        {
+          "cycle": 7,
+          "uid": 9,
+          "label": "benign_stable",
+          "emergence": 0.03764688447117806,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.7529376894235611,
+          "size": 8
+        },
+        {
+          "cycle": 8,
+          "uid": 10,
+          "label": "benign_trend",
+          "emergence": 0.016730058193206786,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.33460116386413574,
+          "size": 23
+        },
+        {
+          "cycle": 8,
+          "uid": 11,
+          "label": "benign_stable",
+          "emergence": 0.03563390374183655,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.712678074836731,
+          "size": 7
+        },
+        {
+          "cycle": 8,
+          "uid": 6,
+          "label": "benign_stable",
+          "emergence": 0.0004941079030252172,
+          "density": 0.05,
+          "growth": 0.2816942598038997,
+          "novelty": 0.03508114814758301,
+          "size": 157
+        },
+        {
+          "cycle": 8,
+          "uid": 12,
+          "label": "benign_stable",
+          "emergence": 0.025712361931800844,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5142472386360168,
+          "size": 5
+        },
+        {
+          "cycle": 9,
+          "uid": 13,
+          "label": "benign_trend",
+          "emergence": 0.02957957237958908,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5915914475917816,
+          "size": 8
+        },
+        {
+          "cycle": 9,
+          "uid": 14,
+          "label": "benign_stable",
+          "emergence": 0.02870101183652878,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5740202367305756,
+          "size": 5
+        },
+        {
+          "cycle": 9,
+          "uid": 11,
+          "label": "benign_stable",
+          "emergence": 0.007206475734710694,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.14412951469421387,
+          "size": 7
+        },
+        {
+          "cycle": 9,
+          "uid": 15,
+          "label": "benign_trend",
+          "emergence": 0.00929737687110901,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.18594753742218018,
+          "size": 18
+        },
+        {
+          "cycle": 9,
+          "uid": 16,
+          "label": "benign_stable",
+          "emergence": 0.020584654808044434,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.41169309616088867,
+          "size": 5
+        },
+        {
+          "cycle": 9,
+          "uid": 6,
+          "label": "benign_stable",
+          "emergence": 0.0004578265392931662,
+          "density": 0.0511633721907568,
+          "growth": 0.07088857969678353,
+          "novelty": 0.08948326110839844,
+          "size": 62
+        },
+        {
+          "cycle": 9,
+          "uid": 17,
+          "label": "attack",
+          "emergence": 0.030208967626094818,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6041793525218964,
+          "size": 11
+        },
+        {
+          "cycle": 10,
+          "uid": 6,
+          "label": "benign_stable",
+          "emergence": 0.010046820982029777,
+          "density": 0.05,
+          "growth": 2.6094379124341005,
+          "novelty": 0.07700371742248535,
+          "size": 310
+        },
+        {
+          "cycle": 10,
+          "uid": 18,
+          "label": "benign_stable",
+          "emergence": 0.03380312770605087,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6760625541210175,
+          "size": 5
+        },
+        {
+          "cycle": 11,
+          "uid": 6,
+          "label": "benign_stable",
+          "emergence": 0.0010311188788269597,
+          "density": 0.05,
+          "growth": 0.8393768056671242,
+          "novelty": 0.024568676948547363,
+          "size": 264
+        },
+        {
+          "cycle": 11,
+          "uid": 19,
+          "label": "benign_stable",
+          "emergence": 0.005533325672149658,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.11066651344299316,
+          "size": 11
+        },
+        {
+          "cycle": 12,
+          "uid": 6,
+          "label": "benign_stable",
+          "emergence": 0.001115085819051942,
+          "density": 0.05,
+          "growth": 1.051672010544321,
+          "novelty": 0.02120596170425415,
+          "size": 278
+        },
+        {
+          "cycle": 12,
+          "uid": 20,
+          "label": "benign_trend",
+          "emergence": 0.015809905529022217,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.31619811058044434,
+          "size": 7
+        },
+        {
+          "cycle": 13,
+          "uid": 6,
+          "label": "benign_stable",
+          "emergence": 0.0007070528588107105,
+          "density": 0.05,
+          "growth": 0.8978318254411468,
+          "novelty": 0.015750229358673096,
+          "size": 251
+        },
+        {
+          "cycle": 13,
+          "uid": 21,
+          "label": "benign_stable",
+          "emergence": 0.009714978933334352,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.194299578666687,
+          "size": 16
+        },
+        {
+          "cycle": 14,
+          "uid": 6,
+          "label": "attack",
+          "emergence": 0.0017014142491875684,
+          "density": 0.05,
+          "growth": 0.6619328667089712,
+          "novelty": 0.051407456398010254,
+          "size": 179
+        },
+        {
+          "cycle": 14,
+          "uid": 22,
+          "label": "benign_stable",
+          "emergence": 0.02764338850975037,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5528677701950073,
+          "size": 9
+        },
+        {
+          "cycle": 15,
+          "uid": 23,
+          "label": "benign_stable",
+          "emergence": 0.013846367597579956,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.2769273519515991,
+          "size": 7
+        },
+        {
+          "cycle": 15,
+          "uid": 24,
+          "label": "benign_stable",
+          "emergence": 0.01585829854011536,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.31716597080230713,
+          "size": 13
+        },
+        {
+          "cycle": 15,
+          "uid": 22,
+          "label": "benign_stable",
+          "emergence": 0.004120254516601563,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.08240509033203125,
+          "size": 9
+        },
+        {
+          "cycle": 15,
+          "uid": 6,
+          "label": "attack",
+          "emergence": 0.0006154435575578927,
+          "density": 0.05,
+          "growth": 1.140490362948826,
+          "novelty": 0.01079261302947998,
+          "size": 206
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "trend_windows": {
+        "coding_topic": [
+          5,
+          9,
+          13
+        ]
+      },
+      "attack_onset_cycle": 8,
+      "attack_detection_cycle": 9,
+      "benign_cluster_rate": 0.1,
+      "queue_pollution": 0.26666666666666666,
+      "analyst_burden": 0.26666666666666666,
+      "n_topk_slots": 40,
+      "per_cycle_log": [
+        {
+          "cycle": 1,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 2,
+          "n_queue": 3,
+          "n_clusters": 3,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 3,
+          "n_queue": 3,
+          "n_clusters": 8,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 4,
+          "n_queue": 3,
+          "n_clusters": 6,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 5,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 6,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 7,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 8,
+          "n_queue": 3,
+          "n_clusters": 4,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 9,
+          "n_queue": 3,
+          "n_clusters": 6,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 1
+        },
+        {
+          "cycle": 10,
+          "n_queue": 3,
+          "n_clusters": 5,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 1
+        },
+        {
+          "cycle": 11,
+          "n_queue": 3,
+          "n_clusters": 4,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 2
+        },
+        {
+          "cycle": 12,
+          "n_queue": 3,
+          "n_clusters": 6,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 1
+        },
+        {
+          "cycle": 13,
+          "n_queue": 3,
+          "n_clusters": 6,
+          "benign_trend_in_queue": 1,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 14,
+          "n_queue": 2,
+          "n_clusters": 2,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        },
+        {
+          "cycle": 15,
+          "n_queue": 3,
+          "n_clusters": 9,
+          "benign_trend_in_queue": 0,
+          "attack_in_queue": 0
+        }
+      ],
+      "cluster_records": [
+        {
+          "cycle": 1,
+          "uid": 1,
+          "label": "benign_stable",
+          "emergence": 0.03661285936832428,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.7322571873664856,
+          "size": 76
+        },
+        {
+          "cycle": 1,
+          "uid": 2,
+          "label": "benign_stable",
+          "emergence": 0.03661285936832428,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.7322571873664856,
+          "size": 6
+        },
+        {
+          "cycle": 2,
+          "uid": 3,
+          "label": "benign_stable",
+          "emergence": 0.018462079763412475,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.3692415952682495,
+          "size": 7
+        },
+        {
+          "cycle": 2,
+          "uid": 4,
+          "label": "benign_stable",
+          "emergence": 0.007973924279212952,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.15947848558425903,
+          "size": 31
+        },
+        {
+          "cycle": 2,
+          "uid": 5,
+          "label": "benign_stable",
+          "emergence": 0.013913762569427491,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.2782752513885498,
+          "size": 9
+        },
+        {
+          "cycle": 3,
+          "uid": 6,
+          "label": "benign_stable",
+          "emergence": 0.03203140795230865,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6406281590461731,
+          "size": 9
+        },
+        {
+          "cycle": 3,
+          "uid": 7,
+          "label": "benign_stable",
+          "emergence": 0.025042381882667542,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5008476376533508,
+          "size": 6
+        },
+        {
+          "cycle": 3,
+          "uid": 8,
+          "label": "benign_stable",
+          "emergence": 0.013315027952194214,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.2663005590438843,
+          "size": 11
+        },
+        {
+          "cycle": 3,
+          "uid": 9,
+          "label": "benign_stable",
+          "emergence": 0.03243750035762787,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6487500071525574,
+          "size": 5
+        },
+        {
+          "cycle": 3,
+          "uid": 10,
+          "label": "benign_stable",
+          "emergence": 0.014388841390609742,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.2877768278121948,
+          "size": 6
+        },
+        {
+          "cycle": 3,
+          "uid": 3,
+          "label": "benign_stable",
+          "emergence": 0.012808333873820564,
+          "density": 0.05,
+          "growth": 1.826678573184468,
+          "novelty": 0.14023631811141968,
+          "size": 16
+        },
+        {
+          "cycle": 3,
+          "uid": 4,
+          "label": "benign_stable",
+          "emergence": 0.0029623576470215024,
+          "density": 0.05,
+          "growth": 0.5617450690688447,
+          "novelty": 0.10546982288360596,
+          "size": 20
+        },
+        {
+          "cycle": 3,
+          "uid": 11,
+          "label": "benign_stable",
+          "emergence": 0.0308127760887146,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.616255521774292,
+          "size": 6
+        },
+        {
+          "cycle": 4,
+          "uid": 12,
+          "label": "benign_stable",
+          "emergence": 0.008938336372375488,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.17876672744750977,
+          "size": 8
+        },
+        {
+          "cycle": 4,
+          "uid": 13,
+          "label": "benign_stable",
+          "emergence": 0.011208266019821167,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.22416532039642334,
+          "size": 15
+        },
+        {
+          "cycle": 4,
+          "uid": 14,
+          "label": "benign_stable",
+          "emergence": 0.019932335615158083,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.3986467123031616,
+          "size": 5
+        },
+        {
+          "cycle": 4,
+          "uid": 4,
+          "label": "benign_stable",
+          "emergence": 0.009504076492261421,
+          "density": 0.05,
+          "growth": 1.371563556432483,
+          "novelty": 0.13858747482299805,
+          "size": 29
+        },
+        {
+          "cycle": 4,
+          "uid": 15,
+          "label": "benign_stable",
+          "emergence": 0.012348484992980958,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.24696969985961914,
+          "size": 20
+        },
+        {
+          "cycle": 4,
+          "uid": 11,
+          "label": "benign_stable",
+          "emergence": 0.007152897257312461,
+          "density": 0.05,
+          "growth": 1.1541506798272583,
+          "novelty": 0.12395083904266357,
+          "size": 7
+        },
+        {
+          "cycle": 5,
+          "uid": 16,
+          "label": "benign_stable",
+          "emergence": 0.003370541334152222,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.06741082668304443,
+          "size": 238
+        },
+        {
+          "cycle": 5,
+          "uid": 17,
+          "label": "benign_stable",
+          "emergence": 0.032340534031391144,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6468106806278229,
+          "size": 7
+        },
+        {
+          "cycle": 6,
+          "uid": 16,
+          "label": "benign_stable",
+          "emergence": 0.0005741996191564247,
+          "density": 0.05,
+          "growth": 0.44771025215665017,
+          "novelty": 0.025650501251220703,
+          "size": 137
+        },
+        {
+          "cycle": 6,
+          "uid": 18,
+          "label": "benign_stable",
+          "emergence": 0.03356905877590179,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6713811755180359,
+          "size": 8
+        },
+        {
+          "cycle": 7,
+          "uid": 16,
+          "label": "benign_stable",
+          "emergence": 0.0016363685522874118,
+          "density": 0.05,
+          "growth": 1.3932250532136625,
+          "novelty": 0.02349036931991577,
+          "size": 203
+        },
+        {
+          "cycle": 7,
+          "uid": 19,
+          "label": "benign_stable",
+          "emergence": 0.039720259606838226,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.7944051921367645,
+          "size": 13
+        },
+        {
+          "cycle": 8,
+          "uid": 20,
+          "label": "benign_trend",
+          "emergence": 0.029818522930145266,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.5963704586029053,
+          "size": 5
+        },
+        {
+          "cycle": 8,
+          "uid": 19,
+          "label": "benign_stable",
+          "emergence": 0.0034821021991884964,
+          "density": 0.05,
+          "growth": 1.074107972153722,
+          "novelty": 0.06483709812164307,
+          "size": 14
+        },
+        {
+          "cycle": 8,
+          "uid": 16,
+          "label": "benign_stable",
+          "emergence": 0.0005307809880884619,
+          "density": 0.05,
+          "growth": 0.20858259800725298,
+          "novelty": 0.050894081592559814,
+          "size": 92
+        },
+        {
+          "cycle": 8,
+          "uid": 21,
+          "label": "benign_stable",
+          "emergence": 0.0075920820236206055,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.1518416404724121,
+          "size": 5
+        },
+        {
+          "cycle": 9,
+          "uid": 22,
+          "label": "attack",
+          "emergence": 0.033471289277076724,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.6694257855415344,
+          "size": 8
+        },
+        {
+          "cycle": 9,
+          "uid": 19,
+          "label": "benign_stable",
+          "emergence": 0.002516591523944734,
+          "density": 0.05,
+          "growth": 0.663527763378787,
+          "novelty": 0.07585489749908447,
+          "size": 10
+        },
+        {
+          "cycle": 9,
+          "uid": 23,
+          "label": "benign_trend",
+          "emergence": 0.01960648894309998,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.3921297788619995,
+          "size": 7
+        },
+        {
+          "cycle": 9,
+          "uid": 24,
+          "label": "benign_stable",
+          "emergence": 0.014808040857315064,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.29616081714630127,
+          "size": 19
+        },
+        {
+          "cycle": 9,
+          "uid": 25,
+          "label": "benign_trend",
+          "emergence": 0.007241076231002808,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.14482152462005615,
+          "size": 38
+        },
+        {
+          "cycle": 9,
+          "uid": 26,
+          "label": "benign_stable",
+          "emergence": 0.013185223937034607,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.26370447874069214,
+          "size": 9
+        },
+        {
+          "cycle": 10,
+          "uid": 19,
+          "label": "benign_trend",
+          "emergence": 0.003277738105258234,
+          "density": 0.05,
+          "growth": 0.4891743762340093,
+          "novelty": 0.13401103019714355,
+          "size": 6
+        },
+        {
+          "cycle": 10,
+          "uid": 26,
+          "label": "benign_stable",
+          "emergence": 0.0044589011256207295,
+          "density": 0.05,
+          "growth": 0.5945348918918356,
+          "novelty": 0.14999628067016602,
+          "size": 6
+        },
+        {
+          "cycle": 10,
+          "uid": 27,
+          "label": "benign_trend",
+          "emergence": 0.0076085090637207035,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.15217018127441406,
+          "size": 7
+        },
+        {
+          "cycle": 10,
+          "uid": 28,
+          "label": "attack",
+          "emergence": 0.010231131315231325,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.20462262630462646,
+          "size": 35
+        },
+        {
+          "cycle": 10,
+          "uid": 25,
+          "label": "benign_trend",
+          "emergence": 0.0013354509693879733,
+          "density": 0.05362733424791656,
+          "growth": 1.4228568508200337,
+          "novelty": 0.01750171184539795,
+          "size": 58
+        },
+        {
+          "cycle": 11,
+          "uid": 29,
+          "label": "attack",
+          "emergence": 0.153107937914145,
+          "density": 0.2616987294536681,
+          "growth": 1.0,
+          "novelty": 0.5850541889667511,
+          "size": 8
+        },
+        {
+          "cycle": 11,
+          "uid": 30,
+          "label": "benign_stable",
+          "emergence": 0.02069275975227356,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.4138551950454712,
+          "size": 7
+        },
+        {
+          "cycle": 11,
+          "uid": 25,
+          "label": "benign_trend",
+          "emergence": 0.001146243281026755,
+          "density": 0.05,
+          "growth": 0.7681983859426758,
+          "novelty": 0.029842376708984375,
+          "size": 46
+        },
+        {
+          "cycle": 11,
+          "uid": 28,
+          "label": "attack",
+          "emergence": 0.0034305571294998296,
+          "density": 0.05,
+          "growth": 1.2058520542041489,
+          "novelty": 0.05689847469329834,
+          "size": 43
+        },
+        {
+          "cycle": 12,
+          "uid": 31,
+          "label": "benign_stable",
+          "emergence": 0.012329882383346558,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.24659764766693115,
+          "size": 5
+        },
+        {
+          "cycle": 12,
+          "uid": 29,
+          "label": "attack",
+          "emergence": 0.0042869211028269535,
+          "density": 0.1915510289001763,
+          "growth": 0.7123179275482191,
+          "novelty": 0.03141862154006958,
+          "size": 6
+        },
+        {
+          "cycle": 12,
+          "uid": 32,
+          "label": "benign_stable",
+          "emergence": 0.01877362132072449,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.37547242641448975,
+          "size": 5
+        },
+        {
+          "cycle": 12,
+          "uid": 30,
+          "label": "benign_stable",
+          "emergence": 0.002182909815823245,
+          "density": 0.05,
+          "growth": 0.663527763378787,
+          "novelty": 0.06579709053039551,
+          "size": 5
+        },
+        {
+          "cycle": 12,
+          "uid": 25,
+          "label": "benign_trend",
+          "emergence": 0.0009171984887586797,
+          "density": 0.05,
+          "growth": 0.6678661649773852,
+          "novelty": 0.027466535568237305,
+          "size": 33
+        },
+        {
+          "cycle": 12,
+          "uid": 28,
+          "label": "attack",
+          "emergence": 0.007408689563746154,
+          "density": 0.08910202987351169,
+          "growth": 1.088947486016496,
+          "novelty": 0.07635664939880371,
+          "size": 47
+        },
+        {
+          "cycle": 13,
+          "uid": 33,
+          "label": "benign_trend",
+          "emergence": 0.013978895545005799,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.27957791090011597,
+          "size": 6
+        },
+        {
+          "cycle": 13,
+          "uid": 31,
+          "label": "benign_stable",
+          "emergence": 0.010487040495496255,
+          "density": 0.05,
+          "growth": 2.0296194171811583,
+          "novelty": 0.10333997011184692,
+          "size": 14
+        },
+        {
+          "cycle": 13,
+          "uid": 29,
+          "label": "attack",
+          "emergence": 0.006066170281601469,
+          "density": 0.4464354833372606,
+          "growth": 1.1541506798272583,
+          "novelty": 0.011773169040679932,
+          "size": 7
+        },
+        {
+          "cycle": 13,
+          "uid": 34,
+          "label": "benign_stable",
+          "emergence": 0.019191718101501467,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.3838343620300293,
+          "size": 5
+        },
+        {
+          "cycle": 13,
+          "uid": 25,
+          "label": "attack",
+          "emergence": 0.0010053178318963256,
+          "density": 0.05,
+          "growth": 0.3367057825897358,
+          "novelty": 0.0597149133682251,
+          "size": 17
+        },
+        {
+          "cycle": 13,
+          "uid": 28,
+          "label": "attack",
+          "emergence": 0.001205137430860961,
+          "density": 0.05,
+          "growth": 1.2769867833350328,
+          "novelty": 0.018874704837799072,
+          "size": 62
+        },
+        {
+          "cycle": 14,
+          "uid": 35,
+          "label": "benign_stable",
+          "emergence": 0.008703184127807618,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.17406368255615234,
+          "size": 282
+        },
+        {
+          "cycle": 14,
+          "uid": 36,
+          "label": "benign_stable",
+          "emergence": 0.007559648156166077,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.15119296312332153,
+          "size": 8
+        },
+        {
+          "cycle": 15,
+          "uid": 37,
+          "label": "benign_stable",
+          "emergence": 0.02213854491710663,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.44277089834213257,
+          "size": 11
+        },
+        {
+          "cycle": 15,
+          "uid": 38,
+          "label": "benign_stable",
+          "emergence": 0.009825518727302552,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.19651037454605103,
+          "size": 6
+        },
+        {
+          "cycle": 15,
+          "uid": 39,
+          "label": "benign_stable",
+          "emergence": 0.01072637438774109,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.21452748775482178,
+          "size": 14
+        },
+        {
+          "cycle": 15,
+          "uid": 40,
+          "label": "benign_stable",
+          "emergence": 0.018588787317276003,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.37177574634552,
+          "size": 10
+        },
+        {
+          "cycle": 15,
+          "uid": 41,
+          "label": "benign_stable",
+          "emergence": 0.005557457895600116,
+          "density": 0.05897173157321453,
+          "growth": 1.0,
+          "novelty": 0.09423935413360596,
+          "size": 10
+        },
+        {
+          "cycle": 15,
+          "uid": 42,
+          "label": "benign_stable",
+          "emergence": 0.02216765880584717,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.44335317611694336,
+          "size": 5
+        },
+        {
+          "cycle": 15,
+          "uid": 43,
+          "label": "benign_stable",
+          "emergence": 0.024167510867118838,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.4833502173423767,
+          "size": 9
+        },
+        {
+          "cycle": 15,
+          "uid": 44,
+          "label": "attack",
+          "emergence": 0.002563321590423584,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.05126643180847168,
+          "size": 111
+        },
+        {
+          "cycle": 15,
+          "uid": 45,
+          "label": "benign_stable",
+          "emergence": 0.008697229623794557,
+          "density": 0.05,
+          "growth": 1.0,
+          "novelty": 0.1739445924758911,
+          "size": 9
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "n_seeds": 5,
+    "mean_benign_cluster_rate": 0.09750921421200058,
+    "mean_queue_pollution": 0.24,
+    "mean_analyst_burden": 0.2533333333333333,
+    "attack_detection_rate": 1.0,
+    "attack_detection_hits": "5/5",
+    "mean_attack_latency": 1.0,
+    "emergence_by_label": {
+      "benign_stable": {
+        "n": 244,
+        "mean": 0.013195359110764941,
+        "median": 0.010018834807103506,
+        "p25": 0.003758931975385048,
+        "p75": 0.019970664381980897
+      },
+      "benign_trend": {
+        "n": 41,
+        "mean": 0.01167421167343511,
+        "median": 0.008136439323425294,
+        "p25": 0.003277738105258234,
+        "p75": 0.015809905529022217
+      },
+      "attack": {
+        "n": 82,
+        "mean": 0.02217090978536414,
+        "median": 0.007588627934455873,
+        "p25": 0.003429234841562124,
+        "p75": 0.02022885007688719
+      }
+    }
+  }
+}
